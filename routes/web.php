@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\FrontendController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,5 +39,13 @@ Route::controller(AdminController::class)->group(function(){
 //User Routes
 Route::controller(FrontendController::class)->group(function(){
     Route::get('/user', 'index')->name('user_home');
+
+});
+
+//General Routes  
+Route::controller(UserController::class)->group(function(){
+    Route::get('/dashboard/account-settings', 'accountSettings')->name('account_Settings');
+    //Route::get('/admin/members', 'Members')->name('admin_show_members');
+    //Route::get('/admin/admin-members', 'adminMembers')->name('admin_show_admin_members');
 
 });

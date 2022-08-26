@@ -1,6 +1,6 @@
 @section('style')
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/plugins/table/datatable/datatables.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/plugins/table/datatable/dt-global_style.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('assets/plugins/table/datatable/datatables.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('assets/plugins/table/datatable/dt-global_style.css')}}">
 @endsection
 
 @extends('layouts.admin')
@@ -11,11 +11,12 @@
 <!--  BEGIN CONTENT PART  -->
 <div id="content" class="main-content">
     <div class="layout-px-spacing">
-
         <div class="row layout-top-spacing" id="cancel-row">
 
             <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
                 <div class="widget-content widget-content-area br-6">
+                    <button class="btn btn-primary mb-2 btn-rounded " data-toggle="modal" data-target="#mailModal" style="float:right; margin-top:1rem; margin-right:1rem;">Mail</button>
+
                     <table id="zero-config" class="table table-striped" style="width:100%">
                         <thead>
                             <tr>
@@ -56,97 +57,9 @@
                                         <line x1="9" y1="9" x2="15" y2="15"></line>
                                     </svg></td>
                             </tr>
-                            <tr>
-                                <td>Dai Rios</td>
-                                <td>Personnel Lead</td>
-                                <td>Edinburgh</td>
-                                <td>35</td>
-                                <td>2012/09/26</td>
-                                <td>$217,500</td>
-                                <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle table-cancel">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="15" y1="9" x2="9" y2="15"></line>
-                                        <line x1="9" y1="9" x2="15" y2="15"></line>
-                                    </svg></td>
-                            </tr>
-                            <tr>
-                                <td>Jenette Caldwell</td>
-                                <td>Development Lead</td>
-                                <td>New York</td>
-                                <td>30</td>
-                                <td>2011/09/03</td>
-                                <td>$345,000</td>
-                                <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle table-cancel">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="15" y1="9" x2="9" y2="15"></line>
-                                        <line x1="9" y1="9" x2="15" y2="15"></line>
-                                    </svg></td>
-                            </tr>
-                            <tr>
-                                <td>Yuri Berry</td>
-                                <td>Chief Marketing Officer (CMO)</td>
-                                <td>New York</td>
-                                <td>40</td>
-                                <td>2009/06/25</td>
-                                <td>$675,000</td>
-                                <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle table-cancel">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="15" y1="9" x2="9" y2="15"></line>
-                                        <line x1="9" y1="9" x2="15" y2="15"></line>
-                                    </svg></td>
-                            </tr>
-                            <tr>
-                                <td>Caesar Vance</td>
-                                <td>Pre-Sales Support</td>
-                                <td>New York</td>
-                                <td>21</td>
-                                <td>2011/12/12</td>
-                                <td>$106,450</td>
-                                <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle table-cancel">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="15" y1="9" x2="9" y2="15"></line>
-                                        <line x1="9" y1="9" x2="15" y2="15"></line>
-                                    </svg></td>
-                            </tr>
-                            <tr>
-                                <td>Doris Wilder</td>
-                                <td>Sales Assistant</td>
-                                <td>Sidney</td>
-                                <td>23</td>
-                                <td>2010/09/20</td>
-                                <td>$85,600</td>
-                                <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle table-cancel">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="15" y1="9" x2="9" y2="15"></line>
-                                        <line x1="9" y1="9" x2="15" y2="15"></line>
-                                    </svg></td>
-                            </tr>
-                            <tr>
-                                <td>Angelica Ramos</td>
-                                <td>Chief Executive Officer (CEO)</td>
-                                <td>London</td>
-                                <td>47</td>
-                                <td>2009/10/09</td>
-                                <td>$1,200,000</td>
-                                <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle table-cancel">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="15" y1="9" x2="9" y2="15"></line>
-                                        <line x1="9" y1="9" x2="15" y2="15"></line>
-                                    </svg></td>
-                            </tr>
-                            <tr>
-                                <td>Gavin Joyce</td>
-                                <td>Developer</td>
-                                <td>Edinburgh</td>
-                                <td>42</td>
-                                <td>2010/12/22</td>
-                                <td>$92,575</td>
-                                <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle table-cancel">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="15" y1="9" x2="9" y2="15"></line>
-                                        <line x1="9" y1="9" x2="15" y2="15"></line>
-                                    </svg></td>
-                            </tr>
+
+
+
                             <tr>
                                 <td>Jennifer Chang</td>
                                 <td>Regional Director</td>
@@ -184,6 +97,44 @@
 </div>
 <!-- END MAIN CONTAINER -->
 
+<!-- Modal -->
+<div class="modal fade" id="mailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create Mail</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                </button>
+            </div>
+            <form action="" method="POST">
+                @csrf
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">TO</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name="to" placeholder="Email Address" value="">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Subject</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name="subject" placeholder=" Subject" value="">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Mail</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"  name="mail"  placeholder="Message"  value="">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Full Name</label>
+                    <input type="file" class="form-control" id="exampleFormControlInput1"  name="file" placeholder="" value="">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal"><i class="flaticon-cancel-12"></i> Discard</button>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
 @endsection
 
 @section('script')
