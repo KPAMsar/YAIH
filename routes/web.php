@@ -4,6 +4,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\FrontendController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\UserAuth;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,7 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-Route::get('/nav-select',[UserAuth::class])->name('nav_select');
+Route::get('/nav-select',[UserAuth::class,'navSelect'])->name('nav_select');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/logout', 'App\Http\Controllers\Auth\LoginController@logout')->name('logout');
@@ -32,6 +33,13 @@ Route::controller(AdminController::class)->group(function(){
     Route::get('/admin', 'index')->name('admin_home');
     Route::get('/admin/members', 'Members')->name('admin_show_members');
     Route::get('/admin/admin-members', 'adminMembers')->name('admin_show_admin_members');
+    Route::get('/admin/blog/create-post', 'showCreateBlogPost')->name('admin_show_create_blog');
+    Route::post('/admin/blog/create-post', 'createBlogPost')->name('admin_create_blog_post');
+    Route::get('/admin/blog-post', 'showBlogPost')->name('admin_show_blog_post');
+    Route::get('/admin/create-events', 'creatUpcomingEvents')->name('admin_creat_event');
+    Route::get('/admin/events', 'showUpcomingEvents')->name('admin_show_event_post');
+
+
 
 });
 

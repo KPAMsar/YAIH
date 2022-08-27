@@ -15,24 +15,21 @@
 
             <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
                 <div class="widget-content widget-content-area br-6">
-                    <button class="btn btn-primary mb-2 btn-rounded " data-toggle="modal" data-target="#mailModal" style="float:right; margin-top:1rem; margin-right:1rem;">Mail</button>
+                <button class="btn btn-primary mb-2 btn-rounded " data-toggle="modal" data-target="#mailModal" style="float:right; margin-top:1rem; margin-right:1rem;">Mail</button>
+                    <button class="btn btn-primary mb-2 btn-rounded " data-toggle="modal" data-target="#adminModal" style="float:right; margin-top:1rem; margin-right:0.5rem;">Admin</button>
 
                     <table id="zero-config" class="table table-striped" style="width:100%">
                         <thead>
                             <tr>
                                 <th>Name</th>
-                                <th>Position</th>
-                                <th>Office</th>
-                                <th>Age</th>
-                                <th>Start date</th>
-                                <th>Salary</th>
+                                <th>Email</th>
+                                <th>Contact</th>
+                                <th>Address</th>
                                 <th class="no-content">Actions</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Tiger Nixon</td>
-                                <td>System Architect</td>
                                 <td>Edinburgh</td>
                                 <td>61</td>
                                 <td>2011/04/25</td>
@@ -44,45 +41,15 @@
                                     </svg></td>
                             </tr>
 
-                            <tr>
-                                <td>Bradley Greer</td>
-                                <td>Software Engineer</td>
-                                <td>London</td>
-                                <td>41</td>
-                                <td>2012/10/13</td>
-                                <td>$132,000</td>
-                                <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle table-cancel">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="15" y1="9" x2="9" y2="15"></line>
-                                        <line x1="9" y1="9" x2="15" y2="15"></line>
-                                    </svg></td>
-                            </tr>
-
-
-
-                            <tr>
-                                <td>Jennifer Chang</td>
-                                <td>Regional Director</td>
-                                <td>Singapore</td>
-                                <td>28</td>
-                                <td>2010/11/14</td>
-                                <td>$357,650</td>
-                                <td><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle table-cancel">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="15" y1="9" x2="9" y2="15"></line>
-                                        <line x1="9" y1="9" x2="15" y2="15"></line>
-                                    </svg></td>
-                            </tr>
+                  
                         </tbody>
                         <tfoot>
-                            <tr>
+                        <tr>
                                 <th>Name</th>
-                                <th>Position</th>
-                                <th>Office</th>
-                                <th>Age</th>
-                                <th>Start date</th>
-                                <th>Salary</th>
-                                <th></th>
+                                <th>Email</th>
+                                <th>Contact</th>
+                                <th>Address</th>
+                                <th class="no-content">Actions</th>
                             </tr>
                         </tfoot>
                     </table>
@@ -124,8 +91,66 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Full Name</label>
-                    <input type="file" class="form-control" id="exampleFormControlInput1"  name="file" placeholder="" value="">
+                    <input type="file" class="form-control-file" id="exampleFormControlInput1"  name="file" placeholder="" value="">
                 </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal"><i class="flaticon-cancel-12"></i> Discard</button>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="adminModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create Admin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                </button>
+            </div>
+            <form action="" method="POST">
+                @csrf
+            <div class="modal-body">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name="to" placeholder="First Name" value="">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name="subject" placeholder="Last Name" value="">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="exampleFormControlInput1"  name="mail"  placeholder="Other Names"  value="">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="exampleFormControlInput1"  name="mail"  placeholder=""  value="">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="exampleFormControlInput1"  name="mail"  placeholder="Message"  value="">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="exampleFormControlInput1"  name="mail"  placeholder="Message"  value="">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="exampleFormControlInput1"  name="mail"  placeholder="Message"  value="">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="exampleFormControlInput1"  name="mail"  placeholder="Message"  value="">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Mail</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"  name="mail"  placeholder="Message"  value="">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Mail</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"  name="mail"  placeholder="Message"  value="">
+                </div> <div class="form-group">
+                    <label for="exampleFormControlInput1">Mail</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"  name="mail"  placeholder="Message"  value="">
+                </div>
+               
+                
             </div>
             <div class="modal-footer">
                 <button class="btn" data-dismiss="modal"><i class="flaticon-cancel-12"></i> Discard</button>

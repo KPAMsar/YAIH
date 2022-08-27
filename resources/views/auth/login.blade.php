@@ -33,6 +33,7 @@
                         <p class="">Log in to your account to continue.</p>
                         
                         <form class="text-left"  method="POST" action="{{ route('login') }}">
+                            @csrf
                             <div class="form">
 
                                 <div id="username-field" class="field-wrapper input">

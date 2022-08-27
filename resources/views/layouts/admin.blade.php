@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Sales Admin | CORK - Multipurpose Bootstrap Dashboard Template </title>
+    <title>YAIH |Young African Innovators Hub </title>
     <link rel="icon" type="image/x-icon" href="{{asset('assets/assets/img/favicon.ico')}}" />
     <link href="{{asset('assets/assets/css/loader.css')}}" rel="stylesheet" type="text/css" />
     <script src="{{asset('assets/assets/js/loader.js')}}"></script>
@@ -46,7 +46,7 @@
                     </a>
                 </li>
                 <li class="nav-item theme-text">
-                    <a href="index-2.html" class="nav-link"> CORK </a>
+                    <a href="index-2.html" class="nav-link"> YAIH </a>
                 </li>
             </ul>
 
@@ -364,46 +364,38 @@
                             </div>
                         </a>
                         <ul class="collapse submenu list-unstyled" id="app" data-parent="#accordionExample">
+                           
                             <li>
-                                <a href="apps_chat.html"> Chat </a>
+                                <a href="#blog" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Blog Post <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg> </a>
+                                <ul class="collapse list-unstyled sub-submenu" id="blog" data-parent="#app">
+                                    <li>
+                                        <a href="{{route('admin_show_create_blog')}}"> Create Post </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{route('admin_show_blog_post')}}"> Edit Post </a>
+                                    </li>
+                                   
+                                </ul>
                             </li>
+
                             <li>
-                                <a href="apps_mailbox.html"> Mailbox </a>
-                            </li>
-                            <li>
-                                <a href="apps_todoList.html"> Todo List </a>
-                            </li>
-                            <li>
-                                <a href="apps_notes.html"> Notes </a>
-                            </li>
-                            <li>
-                                <a href="apps_scrumboard.html">Scrumboard</a>
-                            </li>
-                            <li>
-                                <a href="apps_contacts.html"> Contacts </a>
-                            </li>
-                            <li>
-                                <a href="#appInvoice" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Invoice <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                                <a href="#appInvoice" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Events <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
                                         <polyline points="9 18 15 12 9 6"></polyline>
                                     </svg> </a>
                                 <ul class="collapse list-unstyled sub-submenu" id="appInvoice" data-parent="#app">
                                     <li>
-                                        <a href="apps_invoice-list.html"> List </a>
+                                        <a href="{{route('admin_creat_event')}}"> Create an Event </a>
                                     </li>
                                     <li>
-                                        <a href="apps_invoice-preview.html"> Preview </a>
+                                        <a href="{{route('admin_show_event_post')}}"> Edit an Event </a>
                                     </li>
-                                    <li>
-                                        <a href="apps_invoice-add.html"> Add </a>
-                                    </li>
-                                    <li>
-                                        <a href="apps_invoice-edit.html"> Edit </a>
-                                    </li>
+                                   
                                 </ul>
                             </li>
-                            <li>
-                                <a href="apps_calendar.html"> Calendar </a>
-                            </li>
+                           
+                            
                         </ul>
                     </li>
 

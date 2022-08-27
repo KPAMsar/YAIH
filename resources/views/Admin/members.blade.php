@@ -124,7 +124,7 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Full Name</label>
-                    <input type="file" class="form-control" id="exampleFormControlInput1"  name="file" placeholder="" value="">
+                    <input type="file" class="form-control-file" id="exampleFormControlInput1"  name="file" placeholder="" value="">
                 </div>
             </div>
             <div class="modal-footer">
