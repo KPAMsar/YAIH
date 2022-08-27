@@ -37,6 +37,7 @@ Route::controller(AdminController::class)->group(function(){
     Route::post('/admin/blog/create-post', 'createBlogPost')->name('admin_create_blog_post');
     Route::get('/admin/blog-post', 'showBlogPost')->name('admin_show_blog_post');
     Route::get('/admin/create-events', 'creatUpcomingEvents')->name('admin_creat_event');
+    Route::post('/admin/create-events', 'createEvent')->name('admin_post_event');
     Route::get('/admin/events', 'showUpcomingEvents')->name('admin_show_event_post');
 
 

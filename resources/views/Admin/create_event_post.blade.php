@@ -30,23 +30,23 @@
                                     </div>
                                 </div>
                                 <div class="widget-content widget-content-area" >
-                                    <form action="{{route('admin_create_blog_post')}}" method="post">
+                                    <form action="{{route('admin_post_event')}}" method="post">
                                         @csrf
 
                                         <div class="form-group mb-4">
                                             <label for="exampleFormControlInput2">Topic</label>
                                             <input type="text" class="form-control"  name= "topic"  id="exampleFormControlInput2"
-                                                placeholder="Blog post topic">
+                                                placeholder="Event Name">
                                         </div>
                                         <div class="form-group mb-4">
                                             <label for="exampleFormControlInput2">Description</label>
                                             <input type="text" class="form-control" name= "description"  id="exampleFormControlInput2"
-                                                placeholder="Blog post description">
+                                                placeholder="Event summary">
                                         </div>
                                         
                                         <div class="form-group mb-4">
                                             <label for="exampleFormControlTextarea1">Post</label>
-                                            <textarea class="form-control" name= "post"  id="exampleFormControlTextarea1"
+                                            <textarea class="form-control" name= "event" placeholder="Event "  id="exampleFormControlTextarea1"
                                                 rows="3"></textarea>
                                         </div>
                                         <div class="form-group mb-4 mt-3">
