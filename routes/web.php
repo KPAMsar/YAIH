@@ -17,9 +17,9 @@ use App\Http\Controllers\UserAuth;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Auth::routes();
 Route::get('/nav-select',[UserAuth::class,'navSelect'])->name('nav_select');
@@ -47,7 +47,9 @@ Route::controller(AdminController::class)->group(function(){
 
 //User Routes
 Route::controller(FrontendController::class)->group(function(){
-    Route::get('/user', 'index')->name('user_home');
+    Route::get('/', 'index')->name('user_home');
+    Route::get('/blog', 'showblog')->name('user_blog');
+    Route::get('/events', 'showevents')->name('user_events');
 
 });
 
