@@ -49,7 +49,8 @@ Route::controller(AdminController::class)->group(function(){
 Route::controller(FrontendController::class)->group(function(){
     Route::get('/', 'index')->name('user_home');
     Route::get('/blog', 'showblog')->name('user_blog');
-    Route::get('/events', 'showevents')->name('user_events');
+    Route::get('/events', 'showEvents')->name('user_events');
+    Route::get('/contact-us', 'showContactUs')->name('user_contact_us');
 
 });
 
