@@ -19,7 +19,15 @@
 <div class="page-wrapper">
  	
     <!-- Preloader -->
-    <div class="preloader"></div>
+    <!-- <div class="preloader"></div> -->
+
+    <div id="load_screen">
+        <div class="loader">
+            <div class="loader-content">
+                <div class="spinner-grow align-self-center"></div>
+            </div>
+        </div>
+    </div>
     
     <!-- Main Header -->
     <header class="main-header">
@@ -47,7 +55,7 @@
         <div class="header-lower">
         	<div class="auto-container clearfix">
                 <!--Logo-->
-                <div class="logo"><a href="index-2.html"><img src="{{asset('assets/assets/images/yaih.jpg')}}" alt="Volunteer" title="Volunteer"></a></div>
+                <div class="logo"><a href="index-2.html"><img src="{{asset('assets/assets/images/yaih.png')}}" alt="Volunteerf" title="Volunteer" style="width:15rem; height:8rem;"></a></div>
                 
                 <!--Right Container-->
                 <div class="right-cont clearfix">
@@ -68,7 +76,7 @@
                             <ul class="navigation">
                                 <li class="dropdown"><a href="{{route('user_home')}}">Home</a>
                                 </li>
-                                <li class="dropdown"><a href="#">Pages</a>
+                                <li class="dropdown"><a href="{{route('user_about_us')}}">About Us</a>
                                     <ul class="submenu">
                                         <li><a href="about-us.html">About Us</a></li>
                                         <li><a href="features.html">Features</a></li>
@@ -94,12 +102,7 @@
                                         <li><a href="become-a-volunteer.html">Become a Volunteer</a></li>
                                     </ul>
                                 </li>
-                                <li class="dropdown">
-                                    <a href="causes.html">Causes</a>
-                                    <ul class="submenu">
-                                        <li><a href="single-causes.html">Single Causes</a></li>
-                                    </ul>
-                                </li>
+                              
                                 <li class="dropdown">
                                     <a href="{{route('user_events')}}">Event</a>
                                    
@@ -107,6 +110,33 @@
                                 
                                 <li class=" dropdown"><a href="{{route('user_blog')}}">Blog</a>
                                   
+                                <li class="dropdown"><a href="#">Get Involved</a>
+                                    <ul class="submenu">
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="features.html">Features</a></li>
+                                        <li><a href="our-services.html">Sevices</a></li>
+                                        <li><a href="faq.html">FAQ</a></li>                 
+                                        <li class="dropdown">
+                                            <a href="testimonial-v1.html">Testimonials</a>
+                                            <ul class="submenu">
+                                                <li><a href="testimonial-v1.html">Testimonial V1</a></li>
+                                                <li><a href="testimonial-v2.html">Testimonial V2</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="gallery.html">Gallery</a>
+                                            <ul class="submenu">
+                                                <li><a href="gallery.html">Gallery Style One</a></li>
+                                                <li><a href="gallery-2.html">Gallery Style Two</a></li>
+                                                <li><a href="gallery-3.html">Gallery Style Three</a></li>
+                                                <li><a href="gallery-4.html">Gallery Style Four</a></li>
+                                                <li><a href="gallery-5.html">Gallery Style Five</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="donation.html">Donation</a></li>                 
+                                        <li><a href="become-a-volunteer.html">Become a Volunteer</a></li>
+                                    </ul>
+                                </li>
+
                                 </li>
                                 <li class="dropdown"><a href="{{route('user_contact_us')}}">Contact</a>
                                    
@@ -133,7 +163,7 @@
             
         <div class="sidebar-inner">
             <!--Logo-->
-            <div class="logo"><a href="#"><img src="{{asset('assets/Frontend/images/logo.png')}}" alt=""></a></div>
+            <div class="logo"><a href="#"><img src="{{asset('assets/assets/images/yaih.jpg')}}" alt=""></a></div>
             
             <!--Main Navigation-->
             <nav class="navigation">
