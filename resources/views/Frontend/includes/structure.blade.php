@@ -63,31 +63,7 @@
                                     
                                 </div>
                             </div>
-                            
-                            <!--Footer Column-->
-                        	<div class="col-md-6 col-sm-6 col-xs-12 column">
-                            	<div class="footer-widget popular-tags">
-                                	<h2>Popular <strong>Tags</strong></h2>
-                                	<a href="#">awesome</a>
-                                    <a href="#">strategy</a>
-                                    <a href="#">development</a>
-                                    <a href="#">css</a>
-                                    <a href="#">photoshop</a>
-                                    <a href="#">photography</a>
-                                    <a href="#">html</a>
-                                    <a href="#">charity</a>
-                                    <a href="#">charity</a>
-                                    <a href="#">organisations</a>
-                                    <a href="#">php</a>
-                                    <a href="#">foundation</a>
-                                    <a href="#">donations</a>
-                                    <a href="#">money</a>
-                                    <a href="#">children</a>
-                                    <a href="#">spendings</a>
-                                    <a href="#">help</a>
-                                    <a href="#">housing</a>
-                                </div>
-                            </div>
+                         
                             
                         </div>
                     </div>
@@ -101,7 +77,7 @@
     	<div class="footer-bottom">
             <div class="auto-container">
                 <!--Copyright-->
-                <div class="copyright">Copyright 2015 by <strong>Volunteer - Charity and Fundraising PSD Template</strong> | All rights reserved</div>
+                <div class="copyright">Copyright 2022 by <strong>Young African Innovators Hub</strong> | All rights reserved</div>
             </div>
         </div>
         

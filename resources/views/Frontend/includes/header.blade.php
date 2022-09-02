@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Volunteer Multipurpose HTML5 Donation Template | Blog Page</title>
+<title>Young African Innovators Hub </title>
 <!-- Stylesheets -->
 <!-- Stylesheets -->
 <link href="{{asset('assets/frontend/css/bootstrap.css')}}" rel="stylesheet">
@@ -13,6 +13,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <link href="css/responsive.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/material-ui/5.0.0-beta.5/index.js" integrity="sha512-uKxirna7d5STmVXEMQYBVRW1nERrqHjwOubv4QcK4oYaaifLiEnN/aLIJxVsyK4R1K+awpNIG73RaQfT1DZ8ew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -38,8 +41,8 @@
                 
                 	<div class="col-md-6 col-sm-6 col-xs-12 top-left">
                     	<div class="clearfix">
-                        	<div class="pull-left phone-num"><span class="icon flaticon-telephone51"></span>Call us : <a href="#">+49 123 456 789</a></div>
-                            <div class="pull-left email"><span class="icon flaticon-mail115"></span>Send email : <a href="support%40email.html">support@email.de</a></div>
+                        	<div class="pull-left phone-num"><span class="icon flaticon-telephone51"></span>Call us : <a href="#">+2349121425572</a></div>
+                            <div class="pull-left email"><span class="icon flaticon-mail115"></span>Send email : <a mailto="africaninnovatorshub@gmail.com">africaninnovatorshub@gmail.com</a></div>
                         </div>
                     </div>
                     
@@ -78,28 +81,9 @@
                                 </li>
                                 <li class="dropdown"><a href="{{route('user_about_us')}}">About Us</a>
                                     <ul class="submenu">
-                                        <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="features.html">Features</a></li>
-                                        <li><a href="our-services.html">Sevices</a></li>
-                                        <li><a href="faq.html">FAQ</a></li>                 
-                                        <li class="dropdown">
-                                            <a href="testimonial-v1.html">Testimonials</a>
-                                            <ul class="submenu">
-                                                <li><a href="testimonial-v1.html">Testimonial V1</a></li>
-                                                <li><a href="testimonial-v2.html">Testimonial V2</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a href="gallery.html">Gallery</a>
-                                            <ul class="submenu">
-                                                <li><a href="gallery.html">Gallery Style One</a></li>
-                                                <li><a href="gallery-2.html">Gallery Style Two</a></li>
-                                                <li><a href="gallery-3.html">Gallery Style Three</a></li>
-                                                <li><a href="gallery-4.html">Gallery Style Four</a></li>
-                                                <li><a href="gallery-5.html">Gallery Style Five</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="donation.html">Donation</a></li>                 
-                                        <li><a href="become-a-volunteer.html">Become a Volunteer</a></li>
+                                        <li><a href="about-us.html">What We Do</a></li>
+                                        <li><a href="features.html">Who We Are</a></li>
+                                        <li><a href="our-services.html">Vision & Mission</a></li>
                                     </ul>
                                 </li>
                               
@@ -112,28 +96,8 @@
                                   
                                 <li class="dropdown"><a href="#">Get Involved</a>
                                     <ul class="submenu">
-                                        <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="features.html">Features</a></li>
-                                        <li><a href="our-services.html">Sevices</a></li>
-                                        <li><a href="faq.html">FAQ</a></li>                 
-                                        <li class="dropdown">
-                                            <a href="testimonial-v1.html">Testimonials</a>
-                                            <ul class="submenu">
-                                                <li><a href="testimonial-v1.html">Testimonial V1</a></li>
-                                                <li><a href="testimonial-v2.html">Testimonial V2</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown"><a href="gallery.html">Gallery</a>
-                                            <ul class="submenu">
-                                                <li><a href="gallery.html">Gallery Style One</a></li>
-                                                <li><a href="gallery-2.html">Gallery Style Two</a></li>
-                                                <li><a href="gallery-3.html">Gallery Style Three</a></li>
-                                                <li><a href="gallery-4.html">Gallery Style Four</a></li>
-                                                <li><a href="gallery-5.html">Gallery Style Five</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="donation.html">Donation</a></li>                 
-                                        <li><a href="become-a-volunteer.html">Become a Volunteer</a></li>
+                                        <li><a href="about-us.html">Volunteer</a></li>
+                                        <li><a href="features.html">Support</a></li>
                                     </ul>
                                 </li>
 
@@ -169,40 +133,14 @@
             <nav class="navigation">
                 <ul>
                     <li class="dropdown"><a href="index-2.html">Home</a>
-                        <ul class="submenu">
-                            <li><a href="index-2.html">Homepage Style One</a></li>
-                            <li><a href="index-3.html">Homepage Style Two</a></li>
-                            <li><a href="index-4.html">Homepage Style Three</a></li>
-                            <li><a href="index-5.html">Fullscreen Video Background</a></li>
-                            <li><a href="index-6.html">Fullscreen Parallax</a></li>
-                            <li><a href="index-7.html">Fullscreen Static Image</a></li>
-                            
-                        </ul>
+                        
                     </li>
                     <li class="dropdown"><a href="#">Pages</a>
                         <ul class="submenu">
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="features.html">Features</a></li>
-                            <li><a href="our-services.html">Sevices</a></li>
-                            <li><a href="faq.html">FAQ</a></li>                 
-                            <li class="dropdown">
-                                <a href="testimonial-v1.html">Testimonials</a>
-                                <ul class="submenu">
-                                    <li><a href="testimonial-v1.html">Testimonial V1</a></li>
-                                    <li><a href="testimonial-v2.html">Testimonial V2</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown"><a href="gallery.html">Gallery</a>
-                                <ul class="submenu">
-                                    <li><a href="gallery.html">Gallery Style One</a></li>
-                                    <li><a href="gallery-2.html">Gallery Style Two</a></li>
-                                    <li><a href="gallery-3.html">Gallery Style Three</a></li>
-                                    <li><a href="gallery-4.html">Gallery Style Four</a></li>
-                                    <li><a href="gallery-5.html">Gallery Style Five</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="donation.html">Donation</a></li>                 
-                            <li><a href="become-a-volunteer.html">Become a Volunteer</a></li>
+                            <li><a href="about-us.html">Who We Are</a></li>
+                            <li><a href="features.html">What We Do</a></li>
+                            <li><a href="our-services.html">Vision & Mission</a></li>
+                            
                         </ul>
                     </li>
                     <li class="dropdown">

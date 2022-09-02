@@ -10,7 +10,7 @@
             <ul>
 
                 <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/image-1.jpg" data-saveperformance="off" data-title="Donation is Better">
-                    <img src="{{asset('assets/frontend/images/main-slider/image-1.jpg')}}" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <img src="{{asset('assets/frontend/img/slide4.jpg')}}" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
                     <div class="tp-caption lft tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="-24" data-speed="1500" data-start="500" data-easing="easeOutExpo" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3" data-endspeed="1200" data-endeasing="Power4.easeIn" style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">
                         <div class="title">
@@ -31,7 +31,7 @@
                 </li>
 
                 <li data-transition="slideup" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/image-2.jpg" data-saveperformance="off" data-title="Donation is Better">
-                    <img src="{{asset('assets/frontend/images/main-slider/image-2.jpg')}}" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <img src="{{asset('assets/frontend/img/slide3.jpg')}}" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
                     <div class="tp-caption lfl tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="-24" data-speed="1500" data-start="500" data-easing="easeOutExpo" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3" data-endspeed="1200" data-endeasing="Power4.easeIn" style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">
                         <div class="title with-bg">
@@ -57,7 +57,7 @@
                 </li>
 
                 <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/image-3.jpg" data-saveperformance="off" data-title="Donation is Better">
-                    <img src="{{asset('assets/frontend/images/main-slider/image-3.jpg')}}" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <img src="{{asset('assets/frontend/img/slide1.jpg')}}" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
                     <div class="tp-caption lfr tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="-24" data-speed="1500" data-start="500" data-easing="easeOutExpo" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3" data-endspeed="1200" data-endeasing="Power4.easeIn" style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">
                         <div class="title with-bg">
@@ -144,7 +144,7 @@
         <div class="row clearfix">
 
             <!--Text Column-->
-            <div class="col-md-6 col-sm-12 col-xs-12 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+            <div class="col-md-6 col-sm-12 col-xs-12 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms" style="background-image:url(images/parallax/image-1.jpg);">
                 <div class="text-column">
                     <div class="sec-title">
                         <h2>Become a part of <strong> the world</strong></h2>
@@ -157,8 +157,9 @@
                 </div>
             </div>
 
+            
             <!--Video Column-->
-            <div class="col-md-6 col-sm-12 col-xs-12 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+             <div class="col-md-6 col-sm-12 col-xs-12 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
                 <div class="responsive-video">
                     <iframe height="170" allowfullscreen="" src="http://player.vimeo.com/video/56999995?color=ffffff"></iframe>
                 </div>
@@ -484,58 +485,6 @@
     </div>
 </section>
 
-<!--Contact Us Section-->
-<section class="contact-section">
-    <div class="auto-container">
-        <div class="sec-title">
-            <h2>Contact <strong>us</strong></h2>
-        </div>
-        <div class="sec-text">
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <br>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="form">
-
-            <form id="contact-form" method="post" action="http://world5.commonsupport.com/html/volunteer/sendemail.php">
-                <div class="row clearfix">
-                    <div class="form-group col-md-4 col-sm-6 col-xs-12">
-                        <div class="form-group-inner">
-                            <div class="icon-box"><label for="your-name"><span class="icon flaticon-user168"></span></label></div>
-                            <div class="field-outer">
-                                <input type="text" name="username" id="your-name" placeholder="Your Name">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group col-md-4 col-sm-6 col-xs-12">
-                        <div class="form-group-inner">
-                            <div class="icon-box"><label for="your-email"><span class="icon flaticon-new100"></span></label></div>
-                            <div class="field-outer">
-                                <input type="email" name="email" id="your-email" placeholder="Email">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group col-md-4 col-sm-12 col-xs-12">
-                        <div class="form-group-inner">
-                            <div class="icon-box"><label for="your-subject"><span class="icon flaticon-edition2"></span></label></div>
-                            <div class="field-outer">
-                                <input type="text" name="subject" id="your-subject" placeholder="Subject">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                        <div class="form-group-inner">
-                            <textarea name="message" placeholder="Your Message"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="form-group col-md-12 col-sm-12 col-xs-12 text-right">
-                        <button class="hvr-bounce-to-right" type="submit" name="submit-form">Send Message &ensp; <span class="icon flaticon-envelope32"></span></button>
-                    </div>
-                </div>
-            </form>
-
-        </div>
-    </div>
-</section>
 
 
 
