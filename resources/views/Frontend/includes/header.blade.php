@@ -14,6 +14,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <link href="css/responsive.css" rel="stylesheet">
 
+
+<link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/material-ui/5.0.0-beta.5/index.js" integrity="sha512-uKxirna7d5STmVXEMQYBVRW1nERrqHjwOubv4QcK4oYaaifLiEnN/aLIJxVsyK4R1K+awpNIG73RaQfT1DZ8ew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
@@ -35,7 +38,7 @@
     <!-- Main Header -->
     <header class="main-header">
     	<!--Header Top-->
-        <div class="header-top">
+        <!-- <div class="header-top">
         	<div class="container">
             	<div class="row clearfix">
                 
@@ -52,7 +55,7 @@
                     
                 </div>
             </div>
-        </div>
+        </div> -->
         
         <!--Header Lower-->
         <div class="header-lower">
@@ -81,8 +84,8 @@
                                 </li>
                                 <li class="dropdown"><a href="{{route('user_about_us')}}">About Us</a>
                                     <ul class="submenu">
-                                        <li><a href="about-us.html">What We Do</a></li>
-                                        <li><a href="features.html">Who We Are</a></li>
+                                        <li><a href="{{route('user_show_what_we_do')}}">What We Do</a></li>
+                                        <li><a href="{{route('user_show_who_we_are')}}">Who We Are</a></li>
                                         <li><a href="our-services.html">Vision & Mission</a></li>
                                     </ul>
                                 </li>
@@ -96,7 +99,7 @@
                                   
                                 <li class="dropdown"><a href="#">Get Involved</a>
                                     <ul class="submenu">
-                                        <li><a href="about-us.html">Volunteer</a></li>
+                                        <li><a href="{{route('user_volunteer')}}">Volunteer</a></li>
                                         <li><a href="features.html">Support</a></li>
                                     </ul>
                                 </li>
