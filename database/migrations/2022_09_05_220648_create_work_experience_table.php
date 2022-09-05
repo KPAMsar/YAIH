@@ -15,6 +15,12 @@ return new class extends Migration
     {
         Schema::create('work_experience', function (Blueprint $table) {
             $table->id();
+            $table->string('user_id');
+            $table->string('company');
+            $table->string('role');
+            $table->string('from');
+            $table->string('to')->nullable();
+            $table->string('work_state')->nullable();
             $table->timestamps();
         });
     }

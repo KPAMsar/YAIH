@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('social_links', function (Blueprint $table) {
             $table->id();
+            $table->string('user_id');
+            $table->string('social_media');
+            $table->string('user_name');
             $table->timestamps();
         });
     }
