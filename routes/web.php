@@ -39,6 +39,8 @@ Route::controller(AdminController::class)->group(function(){
     Route::get('/admin/create-events', 'creatUpcomingEvents')->name('admin_creat_event');
     Route::post('/admin/create-events', 'createEvent')->name('admin_post_event');
     Route::get('/admin/events', 'showUpcomingEvents')->name('admin_show_event_post');
+    Route::get('/admin/volunteer', 'showUpcomingVolunteer')->name('admin_show_volunteer');
+    Route::get('/admin/profile', 'showProfile')->name('admin_show_profile');
 
 
 

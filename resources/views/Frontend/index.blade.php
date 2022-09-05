@@ -29,7 +29,6 @@
                     </div>
 
                 </li>
-
                 <li data-transition="slideup" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/image-2.jpg" data-saveperformance="off" data-title="Donation is Better">
                     <img src="{{asset('assets/frontend/img/slide3.jpg')}}" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
@@ -280,7 +279,7 @@
             <h2>Are you ready to volunteer?</h2>
             <h3>start one of our programm today and help people in need</h3>
             <div class="line"></div>
-            <a class="theme-btn light-btn" href="#">BECOME A VOLUNTEER</a>
+            <a class="theme-btn light-btn"  data-toggle="modal" data-target="#exampleModalCenter">BECOME A VOLUNTEER</a>
             <a class="theme-btn light-btn" href="#">MAKE A DONATION</a>
 
         </div>
@@ -483,12 +482,33 @@
 
         </div>
     </div>
+    
 </section>
 
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Launch demo modal
+</button>
 
-
-
-
-
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 @endsection
