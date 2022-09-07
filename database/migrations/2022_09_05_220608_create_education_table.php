@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('school');
             $table->string('certification');
             $table->string('date');
+            $table->string('description')->nullable();
             $table->timestamps();
         });
     }

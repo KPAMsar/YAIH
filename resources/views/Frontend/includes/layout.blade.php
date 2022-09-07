@@ -48,7 +48,7 @@
                         	<div class="col-md-6 col-sm-6 col-xs-12 column">
                             	<div class="footer-widget twitter-feeds">
                                 	<h2>Recent <strong>Tweets</strong></h2>	
-                                    <div class="feed">
+                                    <div class="feed ">
                                     	<div class="icon"><span class="fa fa-twitter"></span></div>
                                         <div class="feed-content">Check out our donation programs here <a href="#">@http://t.co/8dfkjht</a></div>
                                         <div class="time text-right"><em>15 mins ago</em></div>

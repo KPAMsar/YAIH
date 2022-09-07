@@ -15,15 +15,18 @@ return new class extends Migration
     {
         Schema::create('social_links', function (Blueprint $table) {
             $table->id();
-            $table->string('user_id');
-            $table->string('social_media');
-            $table->string('user_name');
+            $table->string('user_id')->nullable();
+            $table->string('twitter')->nullable();
+            $table->string('facebook')->nullable();
+            $table->string('github')->nullable();
+            $table->string('linkedin')->nullable();
             $table->timestamps();
         });
     }
 
     /**
      * Reverse the migrations.
+     * 
      *
      * @return void
      */

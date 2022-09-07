@@ -12,12 +12,12 @@
 <div id="content" class="main-content">
     <div class="layout-px-spacing">
         <div class="row layout-top-spacing" id="cancel-row">
-        <div>
-    <h3>Volunteer</h3>
-</div>
+            <div>
+                <h3>Volunteer</h3>
+            </div>
             <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
                 <div class="widget-content widget-content-area br-6">
-                <button class="btn btn-primary mb-2 btn-rounded " data-toggle="modal" data-target="#mailModal" style="float:right; margin-top:1rem; margin-right:1rem;">Mail</button>
+                    <button class="btn btn-primary mb-2 btn-rounded " data-toggle="modal" data-target="#mailModal" style="float:right; margin-top:1rem; margin-right:1rem;">Mail</button>
                     <button class="btn btn-primary mb-2 btn-rounded " data-toggle="modal" data-target="#adminModal" style="float:right; margin-top:1rem; margin-right:0.5rem;">Admin</button>
 
                     <table id="zero-config" class="table table-striped" style="width:100%">
@@ -40,10 +40,10 @@
                                 </td>
                             </tr>
 
-                  
+
                         </tbody>
                         <tfoot>
-                        <tr>
+                            <tr>
                                 <th>Name</th>
                                 <th>Email</th>
                                 <th>Contact</th>
@@ -75,28 +75,28 @@
             </div>
             <form action="" method="POST">
                 @csrf
-            <div class="modal-body">
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">TO</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" name="to" placeholder="Email Address" value="">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">TO</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="to" placeholder="Email Address" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Subject</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="subject" placeholder=" Subject" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Mail</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="mail" placeholder="Message" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Full Name</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlInput1" name="file" placeholder="" value="">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Subject</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" name="subject" placeholder=" Subject" value="">
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal"><i class="flaticon-cancel-12"></i> Discard</button>
+                    <button type="submit" class="btn btn-primary">Send</button>
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Mail</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1"  name="mail"  placeholder="Message"  value="">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Full Name</label>
-                    <input type="file" class="form-control-file" id="exampleFormControlInput1"  name="file" placeholder="" value="">
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn" data-dismiss="modal"><i class="flaticon-cancel-12"></i> Discard</button>
-                <button type="submit" class="btn btn-primary">Send</button>
-            </div>
             </form>
         </div>
     </div>
@@ -112,49 +112,50 @@
             </div>
             <form action="" method="POST">
                 @csrf
-            <div class="modal-body">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="exampleFormControlInput1" name="to" placeholder="First Name" value="">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="to" placeholder="First Name" value="">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="subject" placeholder="Last Name" value="">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="mail" placeholder="Other Names" value="">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="mail" placeholder="" value="">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="mail" placeholder="Message" value="">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="mail" placeholder="Message" value="">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="mail" placeholder="Message" value="">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="mail" placeholder="Message" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Mail</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="mail" placeholder="Message" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Mail</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="mail" placeholder="Message" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Mail</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="mail" placeholder="Message" value="">
+                    </div>
+
+
                 </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="exampleFormControlInput1" name="subject" placeholder="Last Name" value="">
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal"><i class="flaticon-cancel-12"></i> Discard</button>
+                    <button type="submit" class="btn btn-primary">Send</button>
                 </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="exampleFormControlInput1"  name="mail"  placeholder="Other Names"  value="">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="exampleFormControlInput1"  name="mail"  placeholder=""  value="">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="exampleFormControlInput1"  name="mail"  placeholder="Message"  value="">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="exampleFormControlInput1"  name="mail"  placeholder="Message"  value="">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="exampleFormControlInput1"  name="mail"  placeholder="Message"  value="">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="exampleFormControlInput1"  name="mail"  placeholder="Message"  value="">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Mail</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1"  name="mail"  placeholder="Message"  value="">
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Mail</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1"  name="mail"  placeholder="Message"  value="">
-                </div> <div class="form-group">
-                    <label for="exampleFormControlInput1">Mail</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1"  name="mail"  placeholder="Message"  value="">
-                </div>
-               
-                
-            </div>
-            <div class="modal-footer">
-                <button class="btn" data-dismiss="modal"><i class="flaticon-cancel-12"></i> Discard</button>
-                <button type="submit" class="btn btn-primary">Send</button>
-            </div>
             </form>
         </div>
     </div>

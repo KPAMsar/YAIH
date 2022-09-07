@@ -41,6 +41,14 @@ Route::controller(AdminController::class)->group(function(){
     Route::get('/admin/events', 'showUpcomingEvents')->name('admin_show_event_post');
     Route::get('/admin/volunteer', 'showUpcomingVolunteer')->name('admin_show_volunteer');
     Route::get('/admin/profile', 'showProfile')->name('admin_show_profile');
+    Route::get('/admin/biodata', 'showBiodata')->name('admin_show_biodata');
+    Route::post('/admin/biodata/general-info', 'saveGeneralInfo')->name('admin_post_biodata_general_info');
+    Route::post('/admin/biodata/bio-data', 'addBio')->name('admin_post_biodata_bio');
+    Route::post('/admin/biodata/contact-details', 'saveContact')->name('admin_post_contact');
+    Route::post('/admin/biodata/social-links', 'saveSocialLinks')->name('admin_post_social_links');
+    Route::post('/admin/biodata/work-experience', 'saveWorkExperience')->name('admin_post_work_experience');
+    Route::post('/admin/biodata/skills', 'addSkills')->name('admin_post_skills');
+    Route::post('/admin/biodata/add-education', 'addEducation')->name('admin_post_education');
 
 
 

@@ -17,8 +17,10 @@ return new class extends Migration
             $table->id();
             $table->string('user_id');
             $table->string('company');
+            $table->string('location');
             $table->string('role');
             $table->string('from');
+            $table->string('description');
             $table->string('to')->nullable();
             $table->string('work_state')->nullable();
             $table->timestamps();
