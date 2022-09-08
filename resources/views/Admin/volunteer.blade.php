@@ -41,7 +41,10 @@
                                 <td>{{$data->country_of_residence}}</td>
                                 <td>{{$data->country_of_origin      }}</td>
                                 <td>{{$data->address}}</td>
-                                <td><button class="btn btn-primary">View</button>
+                                <td>
+                                    <a href="{{route('admin_show_volunteer_profile',$data->id)}}">
+                                    <button class="btn btn-primary" id="volunteerId" >View</button>
+                                    </a>
                                 </td>
                             </tr>
                             @endforeach
@@ -195,5 +198,20 @@
         "lengthMenu": [7, 10, 20, 50],
         "pageLength": 7
     });
+</script>
+
+<script>
+    function volunteerId(id){
+        var id = document.getElementById('volunteerId').value = id;
+        var currentUrl = window.location.href;
+        var url = currentUrl.searchParams;
+        
+        var newUrl = url.set('id', '1');
+
+        console.log(newUrl);
+
+        
+        
+    }
 </script>
 @endsection

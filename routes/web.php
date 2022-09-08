@@ -49,7 +49,7 @@ Route::controller(AdminController::class)->group(function(){
     Route::post('/admin/biodata/work-experience', 'saveWorkExperience')->name('admin_post_work_experience');
     Route::post('/admin/biodata/skills', 'addSkills')->name('admin_post_skills');
     Route::post('/admin/biodata/add-education', 'addEducation')->name('admin_post_education');
-    Route::get('/admin/dashboard/volunteer/profile', 'showVolunteerProfile')->name('admin_show_volunteer_profile');
+    Route::get('/admin/dashboard/volunteer/profile/{id}', 'showVolunteerProfile')->name('admin_show_volunteer_profile');
 
 
 
