@@ -38,8 +38,10 @@
         </div>
         <div class="form">
 
-        <form id="contact-form" method="post" action="">
-               
+
+            <form id="contact-form" method="post" action="{{route('user_send_volunteer_request')}}">
+                @csrf
+
                 <div class="row clearfix">
                     <div class="form-group col-md-6 col-sm-6 col-xs-12">
                         <div class="form-group-inner">
@@ -67,7 +69,7 @@
                             <div class="field-outer">
                                 <select type="dropdown" name="country_of_origin" id="country_of_origin" placeholder="Country of Origin">
                                     <option>Select Country of Origin</option>
-                                    <option>Nigeria</option>
+                                    <option value="Nigeria" >Nigeria</option>
                                     <option>Select Country of Origin</option>
                                 </select>
                             </div>
@@ -105,11 +107,46 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group col-md-3 col-sm-6 col-xs-12">
                         <div class="form-group-inner">
                             <div class="icon-box"><label for="your-name"><span class="icon flaticon-user168"></span></label></div>
                             <div class="field-outer">
                                 <input type="date" name="dob" id="dob" placeholder="Date of Birth">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group-inner">
+                            <div class="icon-box"><label for="your-email"><span class="icon flaticon-new100"></span></label></div>
+                            <div class="field-outer">
+                                <select name="gender" id="your-email" placeholder="Gender">
+                                    <option >Gender</option>
+                                    <option value="male" >Male</option>
+                                    <option value="Female" >Female</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group-inner">
+                            <div class="icon-box"><label for="your-name"><span class="icon flaticon-user168"></span></label></div>
+                            <div class="field-outer">
+                                <select type="text" name="education" id="education" placeholder="Highest level of Education">
+                                    <option>Highest Level of Education</option>
+                                    <option value="SSCE">SSCE</option>
+                                    <option value="Bachelors">Bachelors</option>
+                                    <option value="Masters">Masters</option>
+                                    <option value="phd">Phd</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group-inner">
+                            <div class="icon-box"><label for="your-email"><span class="icon flaticon-new100"></span></label></div>
+                            <div class="field-outer">
+                                <input type="text" name="occupation" id="your-email" placeholder="Occupation">
                             </div>
                         </div>
                     </div>
@@ -131,53 +168,22 @@
                     </div>
 
 
+                    
+                    
                     <div class="form-group col-md-6 col-sm-6 col-xs-12">
                         <div class="form-group-inner">
                             <div class="icon-box"><label for="your-email"><span class="icon flaticon-new100"></span></label></div>
                             <div class="field-outer">
-                                <select  name="gender" id="your-email" placeholder="Gender">
-                                    <option>Gender</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                </select>
+                                <input type="text" name="skills" id="your-email" placeholder="Skills">
                             </div>
                         </div>
                     </div>
-                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group-inner">
-                            <div class="icon-box"><label for="your-name"><span class="icon flaticon-user168"></span></label></div>
-                            <div class="field-outer">
-                                <select type="text" name="username" id="your-name" placeholder="Highest level of Education">
-                                    <option>SSCE</option>
-                                    <option>Bachelors</option>
-                                    <option>Masters</option>
-                                    <option>Phd</option>
-                                    <option>Others</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                
+                    <div class="form-group col-md-6 col-sm-12 col-xs-12">
                         <div class="form-group-inner">
                             <div class="icon-box"><label for="your-email"><span class="icon flaticon-new100"></span></label></div>
                             <div class="field-outer">
-                                <input type="text" name="email" id="your-email" placeholder="Skills">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group-inner">
-                            <div class="icon-box"><label for="your-email"><span class="icon flaticon-new100"></span></label></div>
-                            <div class="field-outer">
-                                <input type="text" name="email" id="your-email" placeholder="Occupation">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                        <div class="form-group-inner">
-                            <div class="icon-box"><label for="your-email"><span class="icon flaticon-new100"></span></label></div>
-                            <div class="field-outer">
-                                <input type="file" name="email" id="your-email" placeholder="Occupation">
+                                <input type="file" name="passport" id="your-email" placeholder="Occupation">
                                 <small>Passport photograph</small>
                             </div>
                         </div>
@@ -185,29 +191,22 @@
 
                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
                         <div class="form-group-inner">
-                            <textarea name="message" placeholder="Why do you want to join YAIH"></textarea>
+                            <textarea name="why_you_want_to_join" placeholder="Why do you want to join YAIH"></textarea>
                         </div>
                     </div>
                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
                         <div class="form-group-inner">
-                            <textarea name="message" placeholder="How do you want to Volunteer"></textarea>
+                            <textarea name="why_you_want_volunteer" placeholder="How do you want to Volunteer"></textarea>
                         </div>
                     </div>
-                    <div class="form-group ">
-                        <div class="">
-                            <input type="checkbox" name="message" placeholder="Your Message" required></input>
-                            <small>Young African Innovators Hub is a non-governmental and non-political youth
-                                hub. Are you willing to accept the regulations of the hub?
-                            </small>
-                        </div>
-                    </div>
+                   
 
                     <div class="form-group col-md-12 col-sm-12 col-xs-12 text-right">
                         <button class="hvr-bounce-to-right" type="submit" name="submit-form">Send Request &ensp; <span class="icon flaticon-envelope32"></span></button>
                     </div>
 
                 </div>
-                
+
             </form>
 
         </div>

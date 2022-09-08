@@ -49,6 +49,7 @@ Route::controller(AdminController::class)->group(function(){
     Route::post('/admin/biodata/work-experience', 'saveWorkExperience')->name('admin_post_work_experience');
     Route::post('/admin/biodata/skills', 'addSkills')->name('admin_post_skills');
     Route::post('/admin/biodata/add-education', 'addEducation')->name('admin_post_education');
+    Route::get('/admin/dashboard/volunteer/profile', 'showVolunteerProfile')->name('admin_show_volunteer_profile');
 
 
 
@@ -62,6 +63,7 @@ Route::controller(FrontendController::class)->group(function(){
     Route::get('/events', 'showEvents')->name('user_events');
     Route::get('/contact-us', 'showContactUs')->name('user_contact_us');
     Route::get('/about-us', 'showAboutUs')->name('user_about_us');
+    Route::post('/volunteer', 'saveVolunteerRequest')->name('user_send_volunteer_request');
     Route::get('/volunteer', 'showVolunteer')->name('user_volunteer');
     Route::get('/who-we-are', 'showWhoWeAre')->name('user_show_who_we_are');
     Route::get('/what-we-do', 'showWhatWeDo')->name('user_show_what_we_do');

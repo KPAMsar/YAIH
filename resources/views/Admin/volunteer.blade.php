@@ -23,30 +23,37 @@
                     <table id="zero-config" class="table table-striped" style="width:100%">
                         <thead>
                             <tr>
-                                <th>Name</th>
+                                <th>Fullname</th>
                                 <th>Email</th>
                                 <th>Contact</th>
+                                <th>Country[Residence]</th>
+                                <th>Country[Origin]</th>
                                 <th>Address</th>
                                 <th class="no-content">Actions</th>
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach($volunteerRequest as $data)
                             <tr>
-                                <td>Edinburgh</td>
-                                <td>61</td>
-                                <td>2011/04/25</td>
-                                <td>$320,800</td>
+                                <td>{{$data->fullname}}</td>
+                                <td>{{$data->email}}</td>
+                                <td>{{$data->phone}}</td>
+                                <td>{{$data->country_of_residence}}</td>
+                                <td>{{$data->country_of_origin      }}</td>
+                                <td>{{$data->address}}</td>
                                 <td><button class="btn btn-primary">View</button>
                                 </td>
                             </tr>
-
+                            @endforeach
 
                         </tbody>
                         <tfoot>
-                            <tr>
-                                <th>Name</th>
+                        <tr>
+                                <th>Fullname</th>
                                 <th>Email</th>
                                 <th>Contact</th>
+                                <th>Country[Residence]</th>
+                                <th>Country[Origin]</th>
                                 <th>Address</th>
                                 <th class="no-content">Actions</th>
                             </tr>
