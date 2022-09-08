@@ -279,7 +279,7 @@
             <h2>Are you ready to volunteer?</h2>
             <h3>start one of our programm today and help people in need</h3>
             <div class="line"></div>
-            <a class="theme-btn light-btn"  data-toggle="modal" data-target="#exampleModalCenter">BECOME A VOLUNTEER</a>
+            <a href="{{route('user_volunteer')}}" class="theme-btn light-btn">BECOME A VOLUNTEER</a>
             <a class="theme-btn light-btn" href="#">MAKE A DONATION</a>
 
         </div>

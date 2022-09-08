@@ -61,7 +61,7 @@
         <div class="header-lower">
         	<div class="auto-container clearfix">
                 <!--Logo-->
-                <div class="logo"><a href="index-2.html"><img src="{{asset('assets/assets/images/yaih.png')}}" alt="Volunteerf" title="Volunteer" style="width:15rem; height:8rem;"></a></div>
+                <!-- <div class="logo"><a href="index-2.html"><img src="" alt="Volunteerf" title="Volunteer" style="width:15rem; height:8rem;"></a></div> -->
                 
                 <!--Right Container-->
                 <div class="right-cont clearfix">
