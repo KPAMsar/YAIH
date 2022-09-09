@@ -40,8 +40,8 @@
                                         </svg></a>
                                 </div>
                                 <div class="text-center user-info">
-                                    <img src="{{asset('assets/assets/img/profile-3.jpg')}}" alt="avatar">
-                                    <p class="">Jimmy Turner</p>
+                                    <img src="{{asset('public/images/Admin')}}/{{$profile->photo}}" alt="avatar">
+                                    <p class="">{{$profile->fullname}}</p>
                                 </div>
                                 <div class="user-info-list">
 
@@ -54,7 +54,7 @@
                                                     <line x1="6" y1="1" x2="6" y2="4"></line>
                                                     <line x1="10" y1="1" x2="10" y2="4"></line>
                                                     <line x1="14" y1="1" x2="14" y2="4"></line>
-                                                </svg> Web Developer
+                                                </svg> {{$profile->profession}}
                                             </li>
                                             <li class="contacts-block__item">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
@@ -62,7 +62,7 @@
                                                     <line x1="16" y1="2" x2="16" y2="6"></line>
                                                     <line x1="8" y1="2" x2="8" y2="6"></line>
                                                     <line x1="3" y1="10" x2="21" y2="10"></line>
-                                                </svg>Jan 20, 1989
+                                                </svg>{{$profile->dob}}
                                             </li>
                                             <li class="contacts-block__item">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">

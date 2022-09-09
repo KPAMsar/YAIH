@@ -39,7 +39,7 @@
         <div class="form">
 
 
-            <form id="contact-form" method="post" action="{{route('user_send_volunteer_request')}}">
+            <form id="contact-form" method="post" action="{{route('user_send_volunteer_request')}}" enctype="multipart/form-data">
                 @csrf
 
                 <div class="row clearfix">

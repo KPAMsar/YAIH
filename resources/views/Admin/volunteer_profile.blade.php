@@ -12,7 +12,6 @@
 
 
 
-
     <!--  BEGIN MAIN CONTAINER  -->
     <div class="main-container" id="container">
 
@@ -33,15 +32,20 @@
                             <div class="widget-content widget-content-area">
                                 <div class="d-flex justify-content-between">
                                     <h3 class="">Profile</h3>
-                                    <a href="{{route('admin_show_biodata')}}"class="mt-2 edit-profile">
-                                        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-3">
+                                    <a href="{{route('admin_show_biodata')}}" class="mt-2 edit-profile">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-3">
                                             <path d="M12 20h9"></path>
                                             <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
                                         </svg></a>
                                 </div>
+
+
+
                                 <div class="text-center user-info">
-                                    <img src="{{asset('assets/assets/img/profile-3.jpg')}}" alt="avatar">
-                                    <p class="">Jimmy Turner</p>
+                                    <img src="{{asset('public/Images/Volunteers')}}/{{$volunteer->passport}}" alt="avatar" style=" object-fit: cover;
+                                                                                                                                    width: 16rem;
+                                                                                                                                    height: 20rem;">
+                                    <p class="">{{$volunteer->fullname}}</p>
                                 </div>
                                 <div class="user-info-list">
 
@@ -54,7 +58,7 @@
                                                     <line x1="6" y1="1" x2="6" y2="4"></line>
                                                     <line x1="10" y1="1" x2="10" y2="4"></line>
                                                     <line x1="14" y1="1" x2="14" y2="4"></line>
-                                                </svg> Web Developer
+                                                </svg> {{$volunteer->occupation}}
                                             </li>
                                             <li class="contacts-block__item">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
@@ -62,25 +66,36 @@
                                                     <line x1="16" y1="2" x2="16" y2="6"></line>
                                                     <line x1="8" y1="2" x2="8" y2="6"></line>
                                                     <line x1="3" y1="10" x2="21" y2="10"></line>
-                                                </svg>Jan 20, 1989
+                                                </svg>{{$volunteer->dob}}
                                             </li>
                                             <li class="contacts-block__item">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
                                                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                                     <circle cx="12" cy="10" r="3"></circle>
-                                                </svg>New York, USA
+                                                </svg>{{$volunteer->country_of_residence}}
                                             </li>
                                             <li class="contacts-block__item">
-                                                <a href="mailto:example@mail.com"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                                <a href="{{$volunteer->ema}}">
+                                                <img src="https://img.icons8.com/carbon-copy/30/000000/whatsapp--v1.png"/>{{$volunteer->whatsapp_number}}</a>
+                                            </li>
+                                            <li class="contacts-block__item">
+                                                <a href="{{$volunteer->ema}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
                                                         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                                                         <polyline points="22,6 12,13 2,6"></polyline>
-                                                    </svg>Jimmy@gmail.com</a>
+                                                    </svg>{{$volunteer->whatsapp_number}}</a>
+                                            </li>
+                                            <li class="contacts-block__item">
+                                                <a href="{{$volunteer->email}}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                                    </svg>{{$volunteer->email}}</a>
                                             </li>
                                             <li class="contacts-block__item">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone">
                                                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                                                </svg> +1 (530) 555-12121
+                                                </svg> {{$volunteer->phone}}
                                             </li>
+
                                             <li class="contacts-block__item">
                                                 <ul class="list-inline">
                                                     <li class="list-inline-item">
@@ -114,99 +129,10 @@
                             </div>
                         </div>
 
-                        <div class="education layout-spacing ">
-                            <div class="widget-content widget-content-area">
-                                <h3 class="">Education</h3>
-                                
-                                <div class="timeline-alter">
-                                    <div class="item-timeline">
-                                        <div class="t-meta-date">
-                                            <p class="">04 Mar 2009</p>
-                                        </div>
-                                        <div class="t-dot">
-                                        </div>
-                                        <div class="t-text">
-                                            <p>Royal Collage of Art</p>
-                                            <p>Designer Illustrator</p>
-                                        </div>
-                                    </div>
-                                    <div class="item-timeline">
-                                        <div class="t-meta-date">
-                                            <p class="">25 Apr 2014</p>
-                                        </div>
-                                        <div class="t-dot">
-                                        </div>
-                                        <div class="t-text">
-                                            <p>Massachusetts Institute of Technology (MIT)</p>
-                                            <p>Designer Illustrator</p>
-                                        </div>
-                                    </div>
-                                    <div class="item-timeline">
-                                        <div class="t-meta-date">
-                                            <p class="">04 Apr 2018</p>
-                                        </div>
-                                        <div class="t-dot">
-                                        </div>
-                                        <div class="t-text">
-                                            <p>School of Art Institute of Chicago (SAIC)</p>
-                                            <p>Designer Illustrator</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="work-experience layout-spacing ">
-
-                            <div class="widget-content widget-content-area">
-
-                                <h3 class="">Work Experience</h3>
-
-                                <div class="timeline-alter">
-
-                                    <div class="item-timeline">
-                                        <div class="t-meta-date">
-                                            <p class="">04 Mar 2009</p>
-                                        </div>
-                                        <div class="t-dot">
-                                        </div>
-                                        <div class="t-text">
-                                            <p>Netfilx Inc.</p>
-                                            <p>Designer Illustrator</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="item-timeline">
-                                        <div class="t-meta-date">
-                                            <p class="">25 Apr 2014</p>
-                                        </div>
-                                        <div class="t-dot">
-                                        </div>
-                                        <div class="t-text">
-                                            <p>Google Inc.</p>
-                                            <p>Designer Illustrator</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="item-timeline">
-                                        <div class="t-meta-date">
-                                            <p class="">04 Apr 2018</p>
-                                        </div>
-                                        <div class="t-dot">
-                                        </div>
-                                        <div class="t-text">
-                                            <p>Design Reset Inc.</p>
-                                            <p>Designer Illustrator</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
 
                     </div>
-                    
+
 
                     <div class="col-xl-8 col-lg-6 col-md-7 col-sm-12 layout-top-spacing">
 
@@ -214,7 +140,7 @@
 
                             <div class="widget-content widget-content-area">
                                 <div class="d-flex justify-content-between">
-                                    
+
                                 </div>
 
                                 <h3 class="">Skills</h3>
@@ -246,11 +172,12 @@
 
                         <div class="bio layout-spacing ">
                             <div class="widget-content widget-content-area">
-                                <h3 class="">Bio</h3>
-                                <p>I'm Web Developer from California. I code and design websites worldwide. Mauris varius tellus vitae tristique sagittis. Sed aliquet, est nec auctor aliquet, orci ex vestibulum ex, non pharetra lacus erat ac nulla.</p>
+                                <h3 class="">Why do you want to join the YAIH</h3>
+                                <p>{{$volunteer->why_you_want_to_join}}</p>
+                                <br>
+                                <h3 class="">How do you want to volunteer??</h3>
 
-                                <p>Sed vulputate, ligula eget mollis auctor, lectus elit feugiat urna, eget euismod turpis lectus sed ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc ut velit finibus, scelerisque sapien vitae, pharetra est. Nunc accumsan ligula vehicula scelerisque vulputate.</p>
-
+                                <p>{{$volunteer->why_you_want_volunteer}}</p>
                                 <div class="bio-skill-box">
 
                                     <div class="row">
@@ -261,8 +188,8 @@
                                                 <div>
                                                 </div>
                                                 <div class="">
-                                                    <h5>Sass Applications</h5>
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse eu fugiat nulla pariatur.</p>
+                                                    <h5>Education</h5>
+                                                    <p>{{$volunteer->education}}</p>
                                                 </div>
                                             </div>
 
@@ -274,8 +201,8 @@
                                                 <div>
                                                 </div>
                                                 <div class="">
-                                                    <h5>Github Countributer</h5>
-                                                    <p>Ut enim ad minim veniam, quis nostrud exercitation aliquip ex ea commodo consequat.</p>
+                                                    <h5>Address</h5>
+                                                    <p>{{$volunteer->address}}</p>
                                                 </div>
                                             </div>
 
@@ -359,6 +286,8 @@
                     <button type="button" class="btn btn-primary">Save</button>
                 </div>
             </div>
+
+
         </div>
     </div>
 
