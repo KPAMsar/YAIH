@@ -234,7 +234,7 @@ else{
                                                 <div class="col-md-11 mx-auto">
                                                     <div class="form-group">
                                                         <label for="aboutBio">Bio</label>
-                                                        <textarea class="form-control" id="aboutBio" name="bio" placeholder="Tell something interesting about yourself"  value="{{$adminBioInfo}}"rows="10">
+                                                        <textarea class="form-control" id="aboutBio" name="bio" placeholder="Tell something interesting about yourself"  value="{{$bio}}"rows="10">
 
                                                         </textarea>
                                                     </div>
