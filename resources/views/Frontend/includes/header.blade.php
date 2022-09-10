@@ -90,7 +90,7 @@
                                     <ul class="submenu">
                                         <li><a href="{{route('user_show_what_we_do')}}">What We Do</a></li>
                                         <li><a href="{{route('user_show_who_we_are')}}">Who We Are</a></li>
-                                        <li><a href="our-services.html">Vision & Mission</a></li>
+                                        <li><a href="{{route('user_show_vison_mission')}}">Vision & Mission</a></li>
                                     </ul>
                                 </li>
                               

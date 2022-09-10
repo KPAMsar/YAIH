@@ -67,6 +67,7 @@ Route::controller(FrontendController::class)->group(function(){
     Route::get('/volunteer', 'showVolunteer')->name('user_volunteer');
     Route::get('/who-we-are', 'showWhoWeAre')->name('user_show_who_we_are');
     Route::get('/what-we-do', 'showWhatWeDo')->name('user_show_what_we_do');
+    Route::get('/vision-and-mission', 'showVisonAndMission')->name('user_show_vison_mission');
 
 });
 
