@@ -38,10 +38,10 @@
                                     <div class="card component-card_9">
                                         <img src="{{asset('assets/assets/img/grid-blog-style-3.jpg')}}" class="card-img-top" alt="widget-card-2">
                                         <div class="card-body">
-                                            <p class="meta-date">25 Sep 2020</p>
+                                            <p class="meta-date">{{$data->created_at}}</p>
 
-                                            <h5 class="card-title">How to Start a Blog in 5 Easy Steps.</h5>
-                                            <p class="card-text">Vestibulum vestibulum tortor ut eros tincidunt, ut rutrum elit volutpat.</p>
+                                            <h5 class="card-title">{{$data->topic}}.</h5>
+                                            <p class="card-text">{{$data->description}}</p>
                                         </div>
 
                                     </div>

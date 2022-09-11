@@ -14,18 +14,21 @@
 
                     <div class="tp-caption lft tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="-24" data-speed="1500" data-start="500" data-easing="easeOutExpo" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3" data-endspeed="1200" data-endeasing="Power4.easeIn" style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">
                         <div class="title">
-                            <h2>We try to help people with volunteering</h2>
+                         
+               
+                            <h2>Education is the most powerful weapon</h2>
                         </div>
                     </div>
 
                     <div class="tp-caption lfb tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="32" data-speed="1500" data-start="500" data-easing="easeOutExpo" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3" data-endspeed="1200" data-endeasing="Power4.easeIn" style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">
                         <div class="text">
-                            <h4>try our programs and help people for their needs</h4>
+                            <h4> which 
+                                you can use to change the world.</h4>
                         </div>
                     </div>
 
                     <div class="tp-caption lfb tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="70" data-speed="1500" data-start="1000" data-easing="easeOutExpo" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3" data-endspeed="1200" data-endeasing="Power4.easeIn" style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">
-                        <div class="line"></div>
+                        <div class="line"><p>Nelson Mandela.</p></div>
                     </div>
 
                 </li>
@@ -34,15 +37,18 @@
 
                     <div class="tp-caption lfl tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="-24" data-speed="1500" data-start="500" data-easing="easeOutExpo" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3" data-endspeed="1200" data-endeasing="Power4.easeIn" style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">
                         <div class="title with-bg">
-                            <h2>We try to help people with volunteering</h2>
+                            <h2>Young people should be at the forefront of globalchange and<br>
+                                
+                               </h2>
                         </div>
                     </div>
 
                     <div class="tp-caption lfr tp-resizeme" data-x="center" data-hoffset="0" data-y="center" data-voffset="42" data-speed="1500" data-start="500" data-easing="easeOutExpo" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3" data-endspeed="1200" data-endeasing="Power4.easeIn" style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">
                         <div class="text with-bg">
-                            <h4>try our programs and help people for their needs</h4>
+                            <h4>   innovation.Empowered, they can be key agents for development and peace </h4>
                         </div>
                     </div>
+                   
 
                     <div class="tp-caption lfb tp-resizeme" data-x="center" data-hoffset="-80" data-y="center" data-voffset="110" data-speed="1500" data-start="1000" data-easing="easeOutExpo" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.3" data-endspeed="1200" data-endeasing="Power4.easeIn" style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;">
                         <div class="link-btn"><a href="#" class="theme-btn light-btn">DONATE</a></div>

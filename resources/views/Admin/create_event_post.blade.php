@@ -30,7 +30,7 @@
                                     </div>
                                 </div>
                                 <div class="widget-content widget-content-area" >
-                                    <form action="{{route('admin_post_event')}}" method="post">
+                                    <form action="{{route('admin_post_event')}}" method="post" enctype="multipart/form-data">
                                         @csrf
 
                                         <div class="form-group mb-4">
@@ -50,7 +50,7 @@
                                                 rows="3"></textarea>
                                         </div>
                                         <div class="form-group mb-4 mt-3">
-                                            <label for="exampleFormControlFile1">Example file input</label>
+                                            <label for="exampleFormControlFile1">Picture</label>
                                             <input type="file" class="form-control-file" name= "picture"  id="exampleFormControlFile1">
                                         </div>
                                         <input type="submit" name="time" class="mt-4 mb-4 btn btn-primary">
