@@ -44,7 +44,7 @@
                                     <h3><a href="#">{{$data->topic}}</a></h3>
                                     <div class="post-info"><a href="#"><span class="icon flaticon-user197"></span> &ensp;Jonathan Doe</a> &ensp; <a href="#"><span class="icon flaticon-speechbubble65"></span> &ensp;31 comments</a></div>
                                     <div class="post-text " style="width:80rem;">
-                                    {{$data->post}}
+                                    {{ \Illuminate\Support\Str::limit($data->post, 500, '...') }}
                                     </div>
                                     <div 
                                     class="text-right link"><a href="{{route('user_blog_id',$data->id)}}" class="read-more"><span class="fa fa-angle-right"></span> &ensp; Read More</a></div>

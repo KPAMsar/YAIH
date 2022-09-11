@@ -33,7 +33,7 @@
                        <div class="blog-post wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                            <article class="column-inner">
                                <figure class="image-box">
-                                   <a href="#"><img src="http://free.facebook.com/zero_balance_redirect?operator=airtel_ng" alt="" title="Blog"></a>
+                                   <a href="#"><img src="{{asset('public/Images/Blog')}}/{{$data->img}}" alt="" title="Blog" style="width:65rem; height:35rem; object-fit: cover;"></a>
                                    <div class="post-options">
                                        <a href="#" class="plus-icon img-circle"><span class="flaticon-add30"></span></a>
                                        <a href="#" class="heart-icon img-circle"><span class="flaticon-favorite21"></span></a>
@@ -44,7 +44,7 @@
                                    <h3><a href="#">{{$data->topic}}</a></h3>
                                    <div class="post-info"><a href="#"><span class="icon flaticon-user197"></span> &ensp;Jonathan Doe</a> &ensp; <a href="#"><span class="icon flaticon-speechbubble65"></span> &ensp;31 comments</a></div>
                                    <div class="post-text">
-                                   {{$data->post}}
+                                   {{ \Illuminate\Support\Str::limit($data->post, 100,'...')}}
                                    </div>
                                    <div 
                                    class="text-right link"><a href="#" class="read-more"><span class="fa fa-angle-right"></span> &ensp; Read More</a></div>

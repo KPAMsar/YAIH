@@ -42,7 +42,7 @@
             <form id="contact-form" method="post" action="{{route('user_send_volunteer_request')}}" enctype="multipart/form-data">
                 @csrf
 
-                <div class="row clearfix">
+                <div class="row ">
                     <div class="form-group col-md-6 col-sm-6 col-xs-12">
                         <div class="form-group-inner">
                             <div class="icon-box"><label for="your-name"><span class="icon flaticon-user168"></span></label></div>
@@ -63,13 +63,15 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="row">
                     <div class="form-group col-md-6 col-sm-6 col-xs-12">
                         <div class="form-group-inner">
                             <div class="icon-box"><label for="your-name"><span class="icon flaticon-user168"></span></label></div>
                             <div class="field-outer">
                                 <select type="dropdown" name="country_of_origin" id="country_of_origin" placeholder="Country of Origin">
                                     <option>Select Country of Origin</option>
-                                    <option value="Nigeria" >Nigeria</option>
+                                    <option value="Nigeria">Nigeria</option>
                                     <option>Select Country of Origin</option>
                                 </select>
                             </div>
@@ -87,6 +89,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="row">
                     <div class="form-group col-md-6 col-sm-6 col-xs-12">
                         <div class="form-group-inner">
                             <div class="icon-box"><label for="your-name"><span class="icon flaticon-user168"></span></label></div>
@@ -107,6 +111,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="row">
                     <div class="form-group col-md-3 col-sm-6 col-xs-12">
                         <div class="form-group-inner">
                             <div class="icon-box"><label for="your-name"><span class="icon flaticon-user168"></span></label></div>
@@ -120,9 +126,9 @@
                             <div class="icon-box"><label for="your-email"><span class="icon flaticon-new100"></span></label></div>
                             <div class="field-outer">
                                 <select name="gender" id="your-email" placeholder="Gender">
-                                    <option >Gender</option>
-                                    <option value="male" >Male</option>
-                                    <option value="Female" >Female</option>
+                                    <option>Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="Female">Female</option>
                                 </select>
                             </div>
                         </div>
@@ -150,6 +156,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="row">
                     <div class="form-group col-md-6 col-sm-6 col-xs-12">
                         <div class="form-group-inner">
                             <div class="icon-box"><label for="your-email"><span class="icon flaticon-new100"></span></label></div>
@@ -168,8 +176,9 @@
                     </div>
 
 
-                    
-                    
+                </div>
+                <div class="row">
+
                     <div class="form-group col-md-6 col-sm-6 col-xs-12">
                         <div class="form-group-inner">
                             <div class="icon-box"><label for="your-email"><span class="icon flaticon-new100"></span></label></div>
@@ -178,7 +187,7 @@
                             </div>
                         </div>
                     </div>
-                
+
                     <div class="form-group col-md-6 col-sm-12 col-xs-12">
                         <div class="form-group-inner">
                             <div class="icon-box"><label for="your-email"><span class="icon flaticon-new100"></span></label></div>
@@ -188,28 +197,32 @@
                             </div>
                         </div>
                     </div>
-
+                </div>
+                <div class="row">
                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
                         <div class="form-group-inner">
                             <textarea name="why_you_want_to_join" placeholder="Why do you want to join YAIH"></textarea>
                         </div>
                     </div>
+                </div>
+                <div class="row">
                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
                         <div class="form-group-inner">
                             <textarea name="why_you_want_volunteer" placeholder="How do you want to Volunteer"></textarea>
                         </div>
                     </div>
-                   
 
+                </div>
+                <div>
                     <div class="form-group col-md-12 col-sm-12 col-xs-12 text-right">
                         <button class="hvr-bounce-to-right" type="submit" name="submit-form">Send Request &ensp; <span class="icon flaticon-envelope32"></span></button>
                     </div>
 
                 </div>
-
-            </form>
-
         </div>
+        </form>
+
+    </div>
     </div>
 </section>
 
