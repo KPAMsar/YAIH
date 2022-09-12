@@ -1,4 +1,4 @@
-@extends('Frontend.includes.layout')
+@extends('Frontend.includes.structure')
 
 @section('content')
 
@@ -179,12 +179,12 @@
 <section class="four-column current-projects no-padd-top">
     <div class="auto-container">
         <div class="sec-title clearfix">
-            <h2 class="pull-left">Our current <strong>projects</strong></h2>
+            <h2 class="pull-left">Our Upcomimg <strong>Events</strong></h2>
             <div class="link pull-right"><a href="#"><span class="fa fa-angle-right"></span> See All</a></div>
         </div>
 
         <div class="row clearfix">
-
+            @foreach($upcomingEvents as $data)
             <!--Project Column-->
             <div class="col-md-3 col-sm-6 col-xs-12 column project-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1000ms">
                 <article class="column-inner hvr-float-shadow">
@@ -206,73 +206,9 @@
                     </div>
                 </article>
             </div>
-
-            <!--Project Column-->
-            <div class="col-md-3 col-sm-6 col-xs-12 column project-column wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1000ms">
-                <article class="column-inner hvr-float-shadow">
-                    <figure class="image-box">
-                        <a href="#"><img src="{{asset('assets/frontend/images/resource/image-2.jpg')}}" alt="" title="Volunteer"></a>
-                        <div class="icon-box"><a href="#" class="heart-icon img-circle"><span class="flaticon-favorite21"></span></a></div>
-                    </figure>
-                    <div class="lower-part">
-                        <div class="text">
-                            <h3>Help for education of kids</h3>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                        </div>
-                        <div class="proj-donation">
-                            <div class="info"><strong>Donation : </strong> $17,241 / $25,000</div>
-                            <div class="bar-outer">
-                                <div class="bar-inner" data-don-total="25000" data-don-received="17241"></div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <!--Project Column-->
-            <div class="col-md-3 col-sm-6 col-xs-12 column project-column wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1000ms">
-                <article class="column-inner hvr-float-shadow">
-                    <figure class="image-box">
-                        <a href="#"><img src="{{asset('assets/frontend/images/resource/image-3.jpg')}}" alt="" title="Volunteer"></a>
-                        <div class="icon-box"><a href="#" class="heart-icon img-circle"><span class="flaticon-favorite21"></span></a></div>
-                    </figure>
-                    <div class="lower-part">
-                        <div class="text">
-                            <h3>Spend food in Ughanda</h3>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                        </div>
-                        <div class="proj-donation">
-                            <div class="info"><strong>Donation : </strong> $47241 / $50,000</div>
-                            <div class="bar-outer">
-                                <div class="bar-inner" data-don-total="50000" data-don-received="47241"></div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <!--Project Column-->
-            <div class="col-md-3 col-sm-6 col-xs-12 column project-column wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="1000ms">
-                <article class="column-inner hvr-float-shadow">
-                    <figure class="image-box">
-                        <a href="#"><img src="{{asset('assets/frontend/images/resource/image-4.jpg')}}" alt="" title="Volunteer"></a>
-                        <div class="icon-box"><a href="#" class="heart-icon img-circle"><span class="flaticon-favorite21"></span></a></div>
-                    </figure>
-                    <div class="lower-part">
-                        <div class="text">
-                            <h3>Spend for houses in Africa</h3>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                        </div>
-                        <div class="proj-donation">
-                            <div class="info"><strong>Donation : </strong> $37001 / $77,000</div>
-                            <div class="bar-outer">
-                                <div class="bar-inner" data-don-total="77000" data-don-received="37001"></div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
+             @endforeach       
+       
+         
 
         </div>
     </div>
@@ -286,119 +222,13 @@
             <h3>start one of our programm today and help people in need</h3>
             <div class="line"></div>
             <a href="{{route('user_volunteer')}}" class="theme-btn light-btn">BECOME A VOLUNTEER</a>
-            <a class="theme-btn light-btn" href="#">MAKE A DONATION</a>
+            <a class="theme-btn light-btn" href="#">BECOME A TRAINEE</a>
 
         </div>
     </div>
 </section>
 
-<!--Four Column / Team Section-->
-<section class="four-column team-section">
-    <div class="auto-container">
-        <div class="sec-title">
-            <h2>Our group of <strong>volunteers</strong></h2>
-        </div>
 
-        <div class="row clearfix">
-
-            <!--Team Member-->
-            <div class="col-md-3 col-sm-6 col-xs-12 column team-member">
-                <article class="column-inner hvr-float-shadow">
-                    <figure class="image-box">
-                        <a href="#"><img src="{{asset('assets/frontend/images/resource/team-1.jpg')}}" alt="" title="Volunteer"></a>
-                        <div class="tag-title"><span>Top</span></div>
-                    </figure>
-                    <div class="lower-part">
-                        <h3>Jonathan Doe</h3>
-                        <div class="info">
-                            <p><span class="icon flaticon-telephone114"></span> <strong>Mobile</strong> : +49 123 456 789</p>
-                            <p><span class="icon flaticon-letter110"></span> <strong>E-Mail</strong> : <a href="mailto:johndoe@email.com">johndoe@email.com</a></p>
-                        </div>
-                        <div class="social-links">
-                            <a href="#" class="fa fa-facebook-f"></a>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-instagram"></a>
-                            <a href="#" class="fa fa-google-plus"></a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <!--Team Member-->
-            <div class="col-md-3 col-sm-6 col-xs-12 column team-member">
-                <article class="column-inner hvr-float-shadow">
-                    <figure class="image-box">
-                        <a href="#"><img src="{{asset('assets/frontend/images/resource/team-2.jpg')}}" alt="" title="Volunteer"></a>
-
-                    </figure>
-                    <div class="lower-part">
-                        <h3>Jonathan Doe</h3>
-                        <div class="info">
-                            <p><span class="icon flaticon-telephone114"></span> <strong>Mobile</strong> : +49 123 456 789</p>
-                            <p><span class="icon flaticon-letter110"></span> <strong>E-Mail</strong> : <a href="mailto:johndoe@email.com">johndoe@email.com</a></p>
-                        </div>
-                        <div class="social-links">
-                            <a href="#" class="fa fa-facebook-f"></a>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-instagram"></a>
-                            <a href="#" class="fa fa-google-plus"></a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <!--Team Member-->
-            <div class="col-md-3 col-sm-6 col-xs-12 column team-member">
-                <article class="column-inner hvr-float-shadow">
-                    <figure class="image-box">
-                        <a href="#"><img src="{{asset('assets/frontend/images/resource/team-3.jpg')}}" alt="" title="Volunteer"></a>
-
-                    </figure>
-                    <div class="lower-part">
-                        <h3>Jonathan Doe</h3>
-                        <div class="info">
-                            <p><span class="icon flaticon-telephone114"></span> <strong>Mobile</strong> : +49 123 456 789</p>
-                            <p><span class="icon flaticon-letter110"></span> <strong>E-Mail</strong> : <a href="mailto:johndoe@email.com">johndoe@email.com</a></p>
-                        </div>
-                        <div class="social-links">
-                            <a href="#" class="fa fa-facebook-f"></a>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-instagram"></a>
-                            <a href="#" class="fa fa-google-plus"></a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <!--Team Member-->
-            <div class="col-md-3 col-sm-6 col-xs-12 column team-member">
-                <article class="column-inner hvr-float-shadow">
-                    <figure class="image-box">
-                        <a href="#"><img src="{{asset('assets/frontend/images/resource/team-4.jpg')}}" alt="" title="Volunteer"></a>
-
-                    </figure>
-                    <div class="lower-part">
-                        <h3>Jonathan Doe</h3>
-                        <div class="info">
-                            <p><span class="icon flaticon-telephone114"></span> <strong>Mobile</strong> : +49 123 456 789</p>
-                            <p><span class="icon flaticon-letter110"></span> <strong>E-Mail</strong> : <a href="mailto:johndoe@email.com">johndoe@email.com</a></p>
-                        </div>
-                        <div class="social-links">
-                            <a href="#" class="fa fa-facebook-f"></a>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-instagram"></a>
-                            <a href="#" class="fa fa-google-plus"></a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-
-
-
-        </div>
-    </div>
-</section>
 
 <!--Our Programs-->
 <section class="programs-section no-padd-top">

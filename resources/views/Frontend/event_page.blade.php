@@ -21,15 +21,20 @@
                     <div class="col-md-4 col-sm-6 col-xs-12 buttons-side">
                     	
                         <div class="sec-title">
-                        	<h2 class="skew-lines">Recent  <strong>Blog post</strong></h2>
+                        	<h2 class="skew-lines">Recent  <strong>EVENTS</strong></h2>
                         </div>
                         <!--Tab Buttons-->
                         <ul class="tab-buttons">
-                        	<li class="wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1000ms"><a href="#tab-one" class="tab-btn active-btn clearfix"><div class="icon"><span class="flaticon-blank36"></span></div><h4>Online spending dahsboard</h4></a></li>
-                            <li class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms"><a href="#tab-two" class="tab-btn clearfix"><div class="icon"><span class="flaticon-blank36"></span></div><h4>Worldwide charity programs</h4></a></li>
-                            <li class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms"><a href="#tab-three" class="tab-btn clearfix"><div class="icon"><span class="flaticon-blank36"></span></div><h4>Awesome volunteers</h4></a></li>
-                            <li class="wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms"><a href="#tab-four" class="tab-btn clearfix"><div class="icon"><span class="flaticon-blank36"></span></div><h4>Leading volunteer groups</h4></a></li>
-                            <li class="wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1000ms"><a href="#tab-five" class="tab-btn clearfix"><div class="icon"><span class="flaticon-blank36"></span></div><h4>Charity programs for children</h4></a></li>
+                            @foreach($recentEvent as $data)
+                        	<li class="wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1000ms">
+                                <a href="#tab-one" class="tab-btn active-btn clearfix">
+                                    <div class="icon"><span class="flaticon-blank36">
+
+                                    </span>
+                                </div>
+                                <h4>{{$data->topic}}</h4></a>
+                            </li>
+                            @endforeach                  
                         </ul>
                     </div>
                     
@@ -41,17 +46,17 @@
                         <div class="tab active-tab" id="tab-one">
                             <div class="sec-title">
                                 
-                                <h2>Online s<strong>pending dahsboard</strong></h2>
+                                <h2><strong>{{$data->topic}}</strong></h2>
                             </div>
                             <div class="text">
                             <figure class="image-box">
-                                    <a href="#"><img src="" alt="" title="Blog" style="width:75rem; height:50rem; object-fit: cover;"></a>
+                                    <a href="#"><img src="{{asset('public/Images/Event')}}/{{$data->img}}" alt="" title="Blog" style="width:75rem; height:50rem; object-fit: cover;"></a>
                                     <div class="post-options">
                                     	<a href="#" class="plus-icon img-circle"><span class="flaticon-add30"></span></a>
                                         <a href="#" class="heart-icon img-circle"><span class="flaticon-favorite21"></span></a>
                                     </div>
                             </figure>
-                                <p>{{$event->post}}</p>
+                                <p>{{$event->event}}</p>
                               
                             </div>
                             
