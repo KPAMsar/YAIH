@@ -41,7 +41,7 @@
                                 </div>
                                 <div class="text-center user-info">
                                     <img src="{{asset('public/images/Admin')}}/{{$profile->photo}}" alt="avatar">
-                                    <p class="">{{$profile->fullname}}</p>
+                                    <p class="">{{Auth::user()->name}}</p>
                                 </div>
                                 <div class="user-info-list">
 

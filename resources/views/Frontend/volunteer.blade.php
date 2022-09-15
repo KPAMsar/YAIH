@@ -3,21 +3,6 @@
 @section('content')
 
 
-
-<!--Bread Crumb-->
-<div class="bread-crumb">
-    <div class="auto-container">
-        Pages &ensp;<span class="fa fa-angle-right"></span>&ensp; <a href="#" class="ative">Volunteer</a>
-    </div>
-</div>
-
-<!--Contact Us Section-->
-@extends('Frontend.includes.layout')
-
-@section('content')
-
-
-
 <!--Bread Crumb-->
 <div class="bread-crumb">
     <div class="auto-container">

@@ -213,7 +213,57 @@
             </div>
             
             <br>
-           
+            <div class="row clearfix">
+            
+            	<article class="col-md-4 col-sm-12 col-xs-12 post wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                	<div class="inner">
+                        <div class="icon"><span class="flaticon-favorite7"></span></div>
+                        <h3 class="post-title">Happy customers</h3>
+                        <div class="text">We will work with you to fully understand your business and your target audience to inform our marketing strategy.</div>
+                	</div>
+                </article>
+                
+                <article class="col-md-4 col-sm-12 col-xs-12 post wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                	<div class="inner">
+                        <div class="icon"><span class="flaticon-social16"></span></div>
+                        <h3 class="post-title">Custom donation program</h3>
+                        <div class="text">We have the expertise to create just the right web presence for you, which will be up to date to the latest web standards.</div>
+                	</div>
+                </article>
+                
+                <article class="col-md-4 col-sm-12 col-xs-12 post wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
+                	<div class="inner">
+                        <div class="icon"><span class="flaticon-liquid13"></span></div>
+                        <h3 class="post-title">Changable options and features</h3>
+                        <div class="text">We will work with you to fully understand your business and your target audience to inform our marketing strategy.</div>
+                	</div>
+                </article>
+                
+                <article class="col-md-4 col-sm-12 col-xs-12 post wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                	<div class="inner">
+                        <div class="icon"><span class="flaticon-diamond44"></span></div>
+                        <h3 class="post-title">Shiny bright colours</h3>
+                        <div class="text">Using the outcomes from the Company Analysis, we will put together a plan for the most effective to get the best results for your business.</div>
+                	</div>
+                </article>
+                
+                <article class="col-md-4 col-sm-12 col-xs-12 post wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+                	<div class="inner">
+                        <div class="icon"><span class="flaticon-pin3"></span></div>
+                        <h3 class="post-title">Awarded design assets</h3>
+                        <div class="text">We will work with you to fully understand your business and your target audience to inform our marketing strategy.</div>
+                	</div>
+                </article>
+                
+                <article class="col-md-4 col-sm-12 col-xs-12 post wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1500ms">
+                	<div class="inner">
+                        <div class="icon"><span class="flaticon-lightbulb14"></span></div>
+                        <h3 class="post-title">Brainstorming ideas</h3>
+                        <div class="text">We will work with you to fully understand your business and your target audience to inform our marketing strategy.</div>
+                	</div>
+                </article>
+                
+            </div>
         </div>
     </section>
     
@@ -260,7 +310,7 @@
                 <h2 class="pull-left">Our <strong>featured project</strong></h2>
                 <div class="pull-right link"><a href="#"><span class="fa fa-angle-right"></span>&ensp; See All</a></div>
             </div>
-        	<div class="row clearfix">
+        	<div class="row clearfix">  
             	
                 <!--Image Column-->
                 <div class="col-md-7 col-sm-6 col-xs-12">
@@ -299,32 +349,102 @@
     <section class="four-column team-section no-padd-top">
     	<div class="auto-container">
         	<div class="sec-title">
-                <h2>Our<strong> Events</strong></h2>
+                <h2>Our group of <strong>volunteers</strong></h2>
             </div>
                         
         	<div class="row clearfix">
             	
                 <!--Team Member-->
-                @foreach($upcomingEvents as $data)
                 <div class="col-md-3 col-sm-6 col-xs-12 column team-member">
                 	<article class="column-inner hvr-float-shadow">
                     	<figure class="image-box">
-                        	<a href="#"><img src="{{asset('public/Images/Events')}}/{{$data->img}}" alt="" title="Volunteer" style="width:35rem;height:40rem; object-fit:cover;"></a>
-                            <div class="tag-title"><span>new</span></div>
+                        	<a href="#"><img src="{{asset('assets/Frontend/images/resource/team-1.jpg')}}" alt="" title="Volunteer"></a>
+                            <div class="tag-title"><span>Top</span></div>
                         </figure>
                         <div class="lower-part">
-                        	<h3>{{$data->topic}}</h3>
+                        	<h3>Jonathan Doe</h3>
                             <div class="info">
                             	<p><span class="icon flaticon-telephone114"></span> <strong>Mobile</strong> :  +49 123 456 789</p>
                                 <p><span class="icon flaticon-letter110"></span> <strong>E-Mail</strong> :  <a href="mailto:johndoe@email.com">johndoe@email.com</a></p>
                             </div>
-                            
+                            <div class="social-links">
+                            	<a href="#" class="fa fa-facebook-f"></a>
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-instagram"></a>
+                                <a href="#" class="fa fa-google-plus"></a>
+                            </div>
                         </div>
                     </article>
                 </div>
-                @endforeach
                 
-               
+                <!--Team Member-->
+                <div class="col-md-3 col-sm-6 col-xs-12 column team-member">
+                	<article class="column-inner hvr-float-shadow">
+                    	<figure class="image-box">
+                        	<a href="#"><img src="{{asset('assets/Frontend/images/resource/team-2.jpg')}}" alt="" title="Volunteer"></a>
+                            
+                        </figure>
+                        <div class="lower-part">
+                        	<h3>Jonathan Doe</h3>
+                            <div class="info">
+                            	<p><span class="icon flaticon-telephone114"></span> <strong>Mobile</strong> :  +49 123 456 789</p>
+                                <p><span class="icon flaticon-letter110"></span> <strong>E-Mail</strong> :  <a href="mailto:johndoe@email.com">johndoe@email.com</a></p>
+                            </div>
+                            <div class="social-links">
+                            	<a href="#" class="fa fa-facebook-f"></a>
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-instagram"></a>
+                                <a href="#" class="fa fa-google-plus"></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!--Team Member-->
+                <div class="col-md-3 col-sm-6 col-xs-12 column team-member">
+                	<article class="column-inner hvr-float-shadow">
+                    	<figure class="image-box">
+                        	<a href="#"><img src="{{asset('assets/Frontend/images/resource/team-3.jpg')}}" alt="" title="Volunteer"></a>
+                            
+                        </figure>
+                        <div class="lower-part">
+                        	<h3>Jonathan Doe</h3>
+                            <div class="info">
+                            	<p><span class="icon flaticon-telephone114"></span> <strong>Mobile</strong> :  +49 123 456 789</p>
+                                <p><span class="icon flaticon-letter110"></span> <strong>E-Mail</strong> :  <a href="mailto:johndoe@email.com">johndoe@email.com</a></p>
+                            </div>
+                            <div class="social-links">
+                            	<a href="#" class="fa fa-facebook-f"></a>
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-instagram"></a>
+                                <a href="#" class="fa fa-google-plus"></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!--Team Member-->
+                <div class="col-md-3 col-sm-6 col-xs-12 column team-member">
+                	<article class="column-inner hvr-float-shadow">
+                    	<figure class="image-box">
+                        	<a href="#"><img src="{{asset('assets/Frontend/images/resource/team-4.jpg')}}" alt="" title="Volunteer"></a>
+                            
+                        </figure>
+                        <div class="lower-part">
+                        	<h3>Jonathan Doe</h3>
+                            <div class="info">
+                            	<p><span class="icon flaticon-telephone114"></span> <strong>Mobile</strong> :  +49 123 456 789</p>
+                                <p><span class="icon flaticon-letter110"></span> <strong>E-Mail</strong> :  <a href="mailto:johndoe@email.com">johndoe@email.com</a></p>
+                            </div>
+                            <div class="social-links">
+                            	<a href="#" class="fa fa-facebook-f"></a>
+                                <a href="#" class="fa fa-twitter"></a>
+                                <a href="#" class="fa fa-instagram"></a>
+                                <a href="#" class="fa fa-google-plus"></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
                 
                 
             </div>
@@ -345,45 +465,120 @@
         </div>
     </section>
     
-    <section class="four-column team-section no-padd-top">
+    <!--Price Plans-->
+    <section class="price-plans">
     	<div class="auto-container">
-        	<div class="sec-title">
-                <h2>Our<strong> Blog</strong></h2>
+            
+            <div class="sec-title">
+            	<h2>Our <strong>plans and pricings</strong></h2>
             </div>
-                        
-        	<div class="row clearfix">
+            
+            <div class="row clearfix">
             	
-                
-                    <!--Team Member-->
-                    @foreach($blog as $data)
-                    <a href="#">
-                        <div class="col-md-3 col-sm-6 col-xs-12 column team-member">
-                            <article class="column-inner hvr-float-shadow">
-                                <figure class="image-box">
-                                    <a href="#"><img src="{{asset('public/Images/Blog')}}/{{$data->img}}" alt="" title="Volunteer" style="width:35rem;height:40rem; object-fit:cover;"></a>
-                                    <div class="tag-title"><span>new</span></div>
-                                </figure>
-                                <div class="lower-part">
-                                    <h3>{{$data->topic}}</h3>
-                                    <div class="info">
-                                        <p><span class="icon flaticon-telephone114"></span> <strong>Mobile</strong> :  +49 123 456 789</p>
-                                        <p><span class="icon flaticon-letter110"></span> <strong>E-Mail</strong> :  <a href="mailto:johndoe@email.com">johndoe@email.com</a></p>
-                                    </div>
-                                    
-                                </div>
-                            </article>
+                <!--Table Column-->
+                <article class="col-md-3 col-sm-6 col-xs-12 table-column wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                	<div class="table-inner">
+                    	<div class="table-header">
+                        	<h3>PERSONAL VOLUNTEER</h3>
                         </div>
-                    </a>
-                    @endforeach
+                        <div class="price-column price">
+                            <h4 class="amount"><sup>$</sup>19<sub>/Mo</sub></h4>
+                        </div>
+                        <div class="line"></div>
+                        
+                        <div class="list">
+                            <ul>
+                            	<li>daily food donations</li>
+                                <li>1x person help</li>
+                                <li>unlimted spending</li>
+                                <li>online dashboard</li>
+                                <li>message online</li>
+                            </ul>
+                        </div>
+                        
+                        <a href="#" class="signup hvr-bounce-to-right">Sign Up <span class="icon flaticon-envelope32"></span></a>
+                    </div>
+                </article>
                 
+                <!--Table Column-->
+                <article class="col-md-3 col-sm-6 col-xs-12 table-column style-two wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+                	<div class="table-inner">
+                    	<div class="table-header">
+                        	<h3>Family VOLUNTEER</h3>
+                        </div>
+                        <div class="price-column price">
+                            <h4 class="amount"><sup>$</sup>29<sub>/Mo</sub></h4>
+                        </div>
+                         <div class="line"></div>
+                         
+                        <div class="list">
+                            <ul>
+                            	<li>daily food donations</li>
+                                <li>1x person help</li>
+                                <li>unlimted spending</li>
+                                <li>online dashboard</li>
+                                <li>message online</li>
+                            </ul>
+                        </div>
+                        
+                        <a href="#" class="signup hvr-bounce-to-right">Sign Up <span class="icon flaticon-envelope32"></span></a>
+                    </div>
+                </article>
                 
-               
+                <!--Table Column-->
+                <article class="col-md-3 col-sm-6 col-xs-12 table-column style-three wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+                	<div class="table-inner">
+                    	<div class="table-header">
+                        	<h3>Group VOLUNTEER</h3>
+                        </div>
+                        <div class="price-column price">
+                            <h4 class="amount"><sup>$</sup>49<sub>/Mo</sub></h4>
+                        </div>
+                         <div class="line"></div>
+                         
+                        <div class="list">
+                            <ul>
+                            	<li>daily food donations</li>
+                                <li>1x person help</li>
+                                <li>unlimted spending</li>
+                                <li>online dashboard</li>
+                                <li>message online</li>
+                            </ul>
+                        </div>
+                        
+                        <a href="#" class="signup hvr-bounce-to-right">Sign Up <span class="icon flaticon-envelope32"></span></a>
+                    </div>
+                </article>
                 
+                <!--Table Column-->
+                <article class="col-md-3 col-sm-6 col-xs-12 table-column style-four wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                	<div class="table-inner">
+                    	<div class="table-header">
+                        	<h3>Regional VOLUNTEER</h3>
+                        </div>
+                        <div class="price-column price">
+                            <h4 class="amount"><sup>$</sup>89<sub>/Mo</sub></h4>
+                        </div>
+                         <div class="line"></div>
+                         
+                        <div class="list">
+                            <ul>
+                            	<li>daily food donations</li>
+                                <li>1x person help</li>
+                                <li>unlimted spending</li>
+                                <li>online dashboard</li>
+                                <li>message online</li>
+                            </ul>
+                        </div>
+                        
+                        <a href="#" class="signup hvr-bounce-to-right">Sign Up <span class="icon flaticon-envelope32"></span></a>
+                    </div>
+                </article>
                 
             </div>
+            
         </div>
     </section>
-    
     
     
   

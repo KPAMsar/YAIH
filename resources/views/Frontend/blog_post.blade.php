@@ -27,7 +27,7 @@
                     <ul class="tab-buttons">
                     @foreach($recentBlogPost as $data)
                         <li class="wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1000ms">
-                            <a href="#tab-one" class="tab-btn active-btn clearfix">
+                            <a href="{{route('user_blog_id',$data->id)}}" class="tab-btn active-btn clearfix">
                                 <div class="icon"><span class="flaticon-blank36"></span></div>
                                 <h4>{{$data->topic}}</h4>
                             </a>

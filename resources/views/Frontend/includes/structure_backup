@@ -11,20 +11,10 @@
 <div class="scroll-to-top"><span class="fa fa-arrow-up"></span></div>
 
 
-
 <script src="{{asset('assets/Frontend/js/jquery.js')}}"></script> 
 <script src="{{asset('assets/Frontend/js/bootstrap.min.js')}}"></script>
-<script src="{{asset('assets/Frontend/js/rev-plugins.js')}}"></script>
-<script src="{{asset('assets/Frontend/js/revolution.min.js')}}"></script>
 <script src="{{asset('assets/Frontend/js/owl.carousel.min.js')}}"></script>
-<script src="{{asset('assets/Frontend/js/jquery.easing.min.js')}}"></script>
-<script src="{{asset('assets/Frontend/js/fitvids.js')}}"></script>
-<script src="{{asset('assets/Frontend/js/jquery-parallax.js')}}"></script>
 <script src="{{asset('assets/Frontend/js/scrollbar.js')}}"></script>
-<script src="{{asset('assets/Frontend/js/validate.js')}}"></script>
-<script src="{{asset('assets/Frontend/js/jquery.countdown.js')}}"></script>
-<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-<script src="{{asset('assets/Frontend/js/googlemaps.js')}}"></script>
 <script src="{{asset('assets/Frontend/js/wow.js')}}"></script>
 <script src="{{asset('assets/Frontend/js/script.js')}}"></script>
 <!--Start of Tawk.to Script-->

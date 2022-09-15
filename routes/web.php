@@ -70,6 +70,7 @@ Route::controller(FrontendController::class)->group(function(){
     Route::get('/vision-and-mission', 'showVisonAndMission')->name('user_show_vison_mission');
     Route::get('blog-post/{id}','showBlogPage')->name('user_blog_id');
     Route::get('event-post/{id}','showEventPages')->name('user_event_id');
+    Route::get('iindex','showiindex')->name('usevent_id');
 
 });
 

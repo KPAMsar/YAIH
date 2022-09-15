@@ -7,11 +7,11 @@
                 <div class="clearfix">
                 	
                     <!--Two 4th column-->
-                    <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
                     	<div class="row clearfix">
                         	
                             <!--Footer Column-->
-                        	<div class="col-md-6 col-sm-6 col-xs-12 column">
+                        	<div class="col-md-4 col-sm-6 col-xs-12 column">
                             	<div class="footer-widget about-widget">
                                 	<h2>About <strong>Us</strong></h2>
                                 	<p>YAIH is an online social enterprise that is focused 
@@ -24,7 +24,7 @@
                             </div>
                             
                     		<!--Footer Column-->
-                        	<div class="col-md-6 col-sm-6 col-xs-12 column">
+                        	<div class="col-md-3 col-sm-6 col-xs-12 column">
                             	<div class="footer-widget recent-posts">
                                 	<h2>Recent <strong>Blog Post</strong></h2>	
                                     <div class="post">
@@ -39,15 +39,8 @@
                                     
                                 </div>
                             </div>
-                            
-                        </div>
-                    </div>
-                    
-                    <!--Two 4th column-->
-                    <div class="col-md-6 col-sm-12 col-xs-12">
-                    	<div class="row clearfix">
-                    		<!--Footer Column-->
-                        	<div class="col-md-6 col-sm-6 col-xs-12 column">
+                            <!--Two 4th column-->
+                            <div class="col-md-3 col-sm-6 col-xs-12 column">
                             	<div class="footer-widget twitter-feeds">
                                 	<h2>Recent <strong>Event Post</strong></h2>	
                                     <div class="feed ">
@@ -64,15 +57,17 @@
                                     
                                 </div>
                             </div>
-                            
-                            <!--Footer Column-->
-                        	<div class="col-md-6 col-sm-6 col-xs-12 column">
+                            <div class="col-md-2 col-sm-6 col-xs-12 column">
                             	<div class="footer-widget popular-tags">
-                                	<h2>Popular <strong>Tags</strong></h2>
-                                	<i><a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons"></a></i>
-                                   <a href="#">strategy</a>
-                                    <a href="#">development</a>
-                                    <a href="#">css</a>
+                                	<h2>Social  <strong>Links</strong></h2>
+                                   <a href="#"><i class="fab fa-facebook"></i></a>
+                                   <a href="#"><i class="fab fa-whatsapp"></i></a>
+                                   <a href="#"><i class="fab fa-twitter"></i></a>
+                                   <a href="#"><i class="fab fa-instagram"></i></a>
+                                   <a href="#"><i class="fab fa-telegram"></i></a>
+                                    <a href="#" class="fab fa-linkedin"></a> 
+
+                                    
                                    
                                 </div>
                             </div>
@@ -80,6 +75,7 @@
                         </div>
                     </div>
                     
+                  
                     
                 </div>
             </div>
@@ -87,7 +83,7 @@
         
         <!--Footer Bottom-->
     	<div class="footer-bottom">
-            <div class="auto-container">
+            <div class="auto-container m-3">
                 <!--Copyright-->
                 <div class="copyright">Copyright 2022 <strong>Young African Innovators Hub-YAIH</strong> | All rights reserved</div>
             </div>

@@ -1,6 +1,5 @@
 <?php
 
-use League\CommonMark\Extension\CommonMark\Renderer\Inline\LinkRenderer;
 
 if($adminGeneralInfo != null ){
     $fullname = $adminGeneralInfo->fullname;
