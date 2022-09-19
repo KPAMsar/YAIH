@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('user_id');
             $table->string('topic');
             $table->string('description');
-            $table->string('event');
+            $table->text('event');
             $table->string('img')->nullable();
             $table->timestamps();
         });

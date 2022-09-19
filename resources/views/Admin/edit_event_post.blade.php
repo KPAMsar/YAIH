@@ -33,15 +33,16 @@
                             <div class="widget-content widget-content-area">
                                <div class="row">
 
-                               @foreach($post as $data)
+                               @foreach($event as $data)
                                <div class="col-md-3">
                                     <div class="card component-card_9">
                                         <img src="{{asset('assets/assets/img/grid-blog-style-3.jpg')}}" class="card-img-top" alt="widget-card-2">
                                         <div class="card-body">
-                                            <p class="meta-date">25 Sep 2020</p>
+                                            <p class="meta-date">{{ Carbon\Carbon::parse($data->created_at)->format('d m Y')  }}</p>
 
-                                            <h5 class="card-title">How to Start a Blog in 5 Easy Steps.</h5>
-                                            <p class="card-text">Vestibulum vestibulum tortor ut eros tincidunt, ut rutrum elit volutpat.</p>
+                                            <a href="#">
+                                            <h5 class="card-title">{{ \Illuminate\Support\Str::limit($data->topic, 70,'...')}}.</h5>
+                                            </a>
                                         </div>
 
                                     </div>
