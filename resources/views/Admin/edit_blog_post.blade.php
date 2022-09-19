@@ -36,12 +36,12 @@
                                @foreach($post as $data)
                                <div class="col-md-3">
                                     <div class="card component-card_9">
-                                        <img src="{{asset('assets/assets/img/grid-blog-style-3.jpg')}}" class="card-img-top" alt="widget-card-2">
+                                        <img src="{{asset('public/Images/Blog')}}/{{$data->img}}" class="card-img-top" alt="widget-card-2" style="width:14rem; height:14rem; object-fit:cover;">
                                         <div class="card-body">
-                                            <p class="meta-date">{{$data->created_at}}</p>
+                                            <p class="meta-date">{{ Carbon\Carbon::parse($data->created_at)->format('d m Y')  }}</p>
 
-                                            <a href="#">
-                                            <h5 class="card-title">{{$data->topic}}.</h5>
+                                            <a href="{{route('admin_edit_a_blog_update',$data->id)}}">
+                                            <p class="card-title">{{$data->topic}}.</p>
                                             </a>
                                             <!-- <p class="card-text">{{$data->description}}</p> -->
                                         </div>
