@@ -16,7 +16,7 @@
     justify-content: center;
     align-self: center;
     background-color: #4361ee;
-    background: linear-gradient(to right, #0081ff 0%, #0045ff 100%);;
+    background: linear-gradient(to right, #355fb4 0%, #021E57 100%);;
     border-radius: 50%;
     box-shadow: 0 10px 15px rgba(0, 69, 255, 0.2);
 }
@@ -138,7 +138,7 @@
 }
 .skills .widget-content-area .progress .progress-bar {
     background-color: #4361ee;
-    background: linear-gradient(to right, #0081ff 0%, #0045ff 100%);
+    background: linear-gradient(to right, #0081ff 0%, #021E57 100%);
     border-radius: 1rem;
     box-shadow: 0 2px 4px rgba(0, 69, 255, 0.15), 0 8px 16px rgba(0, 69, 255, 0.2);
     font-size: 12px;

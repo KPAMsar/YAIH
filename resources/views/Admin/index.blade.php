@@ -615,7 +615,7 @@
                         <div class="widget widget-table-two">
 
                             <div class="widget-heading">
-                                <h5 class="">Recent Orders</h5>
+                                <h5 class="">Newest Volunteers</h5>
                             </div>
 
                             <div class="widget-content">
@@ -756,7 +756,7 @@
                         <div class="widget widget-table-three">
 
                             <div class="widget-heading">
-                                <h5 class="">Top Selling Product</h5>
+                                <h5 class="">Upcoming Events</h5>
                             </div>
 
                             <div class="widget-content">
