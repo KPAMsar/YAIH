@@ -12,7 +12,7 @@
     margin-bottom: 50px;
 }
 .cu-contact-section .cu-section-header h4 {
-    color: #0e1726;
+    color: #021E57;
     font-size: 34px;
     font-weight: 600;
 }
@@ -59,7 +59,7 @@
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 25px;
-    color: #0e1726;
+    color: #021E57;
 }
 .cu-contact-section .contact-form form input {
     padding: 8px 5px 8px 40px;
@@ -79,16 +79,16 @@
 }
 .cu-contact-section .contact-form form input {
     box-shadow: none;
-    color: #0e1726;
+    color: #021E57;
     font-weight: 400;
 }
 .cu-contact-section p {
-    color: #0e1726
+    color: #021E57
 }
 .cu-contact-section .n-chk { display: inline-block; }
 
 .cu-contact-section .n-chk label { 
- color: #0e1726;
+ color: #021E57;
 }
 .new-control.new-radio.radio-success>input:checked~span.new-control-indicator {
     background: #4361ee!important;
@@ -111,7 +111,7 @@
     font-size: 14px;
 }
 .cu-contact-section .form-group textarea {
-    color: #0e1726;
+    color: #021E57;
     font-weight: 400;
 }
 .cu-contact-section .form-group textarea:-ms-input-placeholder { color: #7b8489; }

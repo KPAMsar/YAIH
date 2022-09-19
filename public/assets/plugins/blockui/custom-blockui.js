@@ -236,7 +236,7 @@ $('#custom-message').on('click', function() {
             width: 'auto',
             '-webkit-border-radius': 2,
             '-moz-border-radius': 2,
-            backgroundColor: '#0e1726'
+            backgroundColor: '#021E57'
         }
     });
 });

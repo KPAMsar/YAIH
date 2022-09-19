@@ -85,7 +85,7 @@
 }
 .apexcharts-tooltip.dark .apexcharts-tooltip-title {
   background: rgba(0, 0, 0, 0.7);
-  border-bottom: 1px solid #0e1726;
+  border-bottom: 1px solid #021E57;
 }
 
 .apexcharts-tooltip-text-value,
@@ -418,7 +418,7 @@
 .light .apexcharts-zoom-out-icon:hover svg, 
 .light .apexcharts-reset-zoom-icon:hover svg, 
 .light .apexcharts-menu-icon:hover svg {
-  fill: #0e1726;
+  fill: #021E57;
 }
 
 .apexcharts-selection-icon, .apexcharts-menu-icon {
@@ -454,7 +454,7 @@
   stroke: #008FFB;
 }
 .apexcharts-pan-icon:not(.selected):hover svg {
-  stroke: #0e1726;
+  stroke: #021E57;
 }
 
 .apexcharts-toolbar {

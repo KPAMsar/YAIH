@@ -219,7 +219,7 @@
     
     
     <!--Fact Counter-->
-    <section class="fact-counter" style="background-image:url(images/parallax/image-2.jpg);">
+    <section class="fact-counter" style="background-image:url('assets/Frontend/img/image-2.jpg');">
     	<div class="auto-container">
         	<div class="row clearfix">
         		
@@ -310,7 +310,7 @@
                 	<article class="column-inner hvr-float-shadow">
                     	<figure class="image-box">
                         	<a href="#"><img src="{{asset('public/Images/Events')}}/{{$data->img}}" alt="" title="Volunteer" style="width:35rem;height:40rem; object-fit:cover;"></a>
-                            <div class="tag-title"><span>new</span></div>
+                            <!-- <div class="tag-title"><span>new</span></div> -->
                         </figure>
                         <div class="lower-part">
                         	<h3>{{$data->topic}}</h3>
@@ -332,7 +332,7 @@
     </section>
     
     <!--Parallax Section-->
-    <section class="parallax-section" style="background-image:url(images/parallax/image-1.jpg);">
+    <section class="parallax-section" style="background-image:url('assets/Frontend/img/image-2.jpg');">
     	<div class="auto-container">
         	<div class="text-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
             	<h2>Are you ready to volunteer?</h2>
@@ -361,14 +361,15 @@
                             <article class="column-inner hvr-float-shadow">
                                 <figure class="image-box">
                                     <a href="#"><img src="{{asset('public/Images/Blog')}}/{{$data->img}}" alt="" title="Volunteer" style="width:35rem;height:40rem; object-fit:cover;"></a>
-                                    <div class="tag-title"><span>new</span></div>
+                                    <!-- <div class="tag-title"><span>new</span></div> -->
                                 </figure>
                                 <div class="lower-part">
+                                    <p>{{$data->created_at}}</p>
                                     <h3>{{$data->topic}}</h3>
-                                    <div class="info">
+                                    <!-- <div class="info">
                                         <p><span class="icon flaticon-telephone114"></span> <strong>Mobile</strong> :  +49 123 456 789</p>
                                         <p><span class="icon flaticon-letter110"></span> <strong>E-Mail</strong> :  <a href="mailto:johndoe@email.com">johndoe@email.com</a></p>
-                                    </div>
+                                    </div> -->
                                     
                                 </div>
                             </article>

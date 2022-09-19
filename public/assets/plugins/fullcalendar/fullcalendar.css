@@ -230,7 +230,7 @@ body .fc {
     border: none;
 }
 .fc-state-hover {
-    color: #0e1726;
+    color: #021E57;
     text-decoration: none;
     background-position: 0 -15px;
     -webkit-transition: background-position .1s linear;
@@ -685,7 +685,7 @@ a.fc-more:hover {
 .fc-toolbar h2 {
     margin: 0;
     font-size: 18px;
-    color: #0e1726;
+    color: #021E57;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 2px;

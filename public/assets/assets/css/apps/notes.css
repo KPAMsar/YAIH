@@ -65,7 +65,7 @@
     height: 100%;
 }
 .tab-title hr {
-    border-top: 1px solid #0e1726;
+    border-top: 1px solid #021E57;
     max-width: 54px;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -357,7 +357,7 @@
     height: 20px;
 }
 .note-container.note-grid .note-item .note-inner-content .note-footer .nav-link .feather-more-vertical:hover {
-    color: #0e1726;
+    color: #021E57;
 }
 .note-container.note-grid .note-item.note-personal .note-inner-content .note-footer .nav-link .feather-more-vertical,
 .note-container.note-grid .note-item.note-work .note-inner-content .note-footer .nav-link .feather-more-vertical,

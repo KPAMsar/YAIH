@@ -21,11 +21,14 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Nunito:wght@600&display=swap');
 </style>
+<!-- Flaticons cdn  -->
+<link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+
 
 <link rel="stylesheet" href="https://fontawesome.com/releases/v5.15/css/all.css"/>
+<link rel="icon" type="image/png" sizes="64x64" href="{{asset('assets/Frontend/img/favicon.ico')}}">
 
-
-<link rel="shortcut icon" type="{{asset('assets/frontend/img/favicon.png')}}" href="Link to the image"/>
+<link rel="icon" type="{{asset('assets/Frontend/img/favicon.png')}}" href="Link to the image"/>
 <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -80,7 +83,7 @@
         <div class="header-lower">
         	<div class="auto-container clearfix">
                 <!--Logo-->
-                <!-- <div class="logo"><a href="index-2.html"><img src="" alt="Volunteerf" title="Volunteer" style="width:15rem; height:8rem;"></a></div> -->
+                <div class="logo"><a href=""><img src="{{asset('assets/Frontend/img/logo.png')}}" alt="Volunteerf" title="Volunteer" style="width:15rem; height:8rem;"></a></div>
                 
                 <!--Right Container-->
                 <div class="right-cont clearfix">
@@ -151,7 +154,7 @@
             
         <div class="sidebar-inner">
             <!--Logo-->
-            <div class="logo"><a href="#"><img src="{{asset('assets/assets/images/yaih.jpg')}}" alt=""></a></div>
+            <div class="logo"><a href="#"><img src="{{asset('assets/Frontend/img/logo.png')}}" alt=""></a></div>
             
             <!--Main Navigation-->
             <nav class="navigation">

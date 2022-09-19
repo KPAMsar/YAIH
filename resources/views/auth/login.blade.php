@@ -57,7 +57,7 @@
                                     </div>
                                 </div>
 
-                                <div class="division">
+                                <!-- <div class="division">
                                       <span>OR</span>
                                 </div>
 
@@ -72,7 +72,7 @@
                                     </a>
                                 </div>
 
-                                <p class="signup-link">Not registered ? <a href="{{route('register')}}">Create an account</a></p>
+                                <p class="signup-link">Not registered ? <a href="{{route('register')}}">Create an account</a></p> -->
 
                             </div>
                         </form>

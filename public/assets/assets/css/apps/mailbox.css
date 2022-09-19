@@ -426,7 +426,7 @@
 }
 .mailbox-inbox .mail-item[id*="unread-"] div.mail-item-heading .mail-item-inner .f-body .user-email {
     font-weight: 600;
-    color: #0e1726;
+    color: #021E57;
 }
 .mailbox-inbox .mail-item[id*="unread-"] div.mail-item-heading .mail-item-inner .mail-content-excerpt {
     font-weight: 600;

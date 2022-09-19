@@ -69,7 +69,7 @@ table.dataTable thead .sorting_desc_disabled:after {
     top: 1.3rem;
 }
 table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:after {
-    color: #0e1726;
+    color: #021E57;
 }
 table.dataTable {
     border-collapse: separate;

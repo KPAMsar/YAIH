@@ -28,7 +28,7 @@
                     @foreach($recentBlogPost as $data)
                         <li class="wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1000ms">
                             <a href="{{route('user_blog_id',$data->id)}}" class="tab-btn active-btn clearfix">
-                                <div class="icon"><span class="flaticon-blank36"></span></div>
+                                
                                 <h4>{{$data->topic}}</h4>
                             </a>
                         </li>
@@ -45,16 +45,14 @@
                     <div class="tab active-tab" id="tab-one">
                         <div class="sec-title">
 
-                            <h2>Online s<strong>pending dahsboard</strong></h2>
+                            <h2><strong>{{$post->topic}}</strong></h2>
                         </div>
                         <div class="text">
                             <figure class="image-box">
                                 <a href="#"><img src="{{asset('public/Images/Blog')}}/{{$post->img}}" alt="" title="Blog" style="width:75rem; height:50rem; object-fit: cover;"></a>
                                <p>Author: {{ $author->name}}</p>
-                                <div class="post-options">
-                                    <a href="#" class="plus-icon img-circle"><span class="flaticon-add30"></span></a>
-                                    <a href="#" class="heart-icon img-circle"><span class="flaticon-favorite21"></span></a>
-                                </div>
+                               <small style="font-weight:40;"> {{ Carbon\Carbon::parse($data->created_at)->format('Y m d')  }}</small>
+                               
                             </figure>
                             <p>{{$post->post}}</p>
 

@@ -653,7 +653,7 @@ try {
       floating: false,
       style: {
         fontSize: '18px',
-        color:  '#0e1726'
+        color:  '#021E57'
       },
     },
     stroke: {
