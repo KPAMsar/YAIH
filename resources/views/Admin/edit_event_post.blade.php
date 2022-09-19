@@ -40,7 +40,7 @@
                                         <div class="card-body">
                                             <p class="meta-date">{{ Carbon\Carbon::parse($data->created_at)->format('d m Y')  }}</p>
 
-                                            <a href="#">
+                                            <a href="{{route('admin_edit_an_event',$data->id)}}">
                                             <h5 class="card-title">{{ \Illuminate\Support\Str::limit($data->topic, 70,'...')}}.</h5>
                                             </a>
                                         </div>

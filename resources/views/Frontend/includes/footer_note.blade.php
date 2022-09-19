@@ -72,7 +72,7 @@
                                    <a href="#"><i class="fab fa-twitter"></i></a>
                                    <a href="#"><i class="fab fa-instagram"></i></a>
                                    <a href="#"><i class="fab fa-telegram"></i></a>
-                                    <a href="#" class="fab fa-linkedin"></a> 
+                                    <a href="https://www.linkedin.com/in/young-african-innovators-hub-yaih" class="fab fa-linkedin"></a> 
 
                                     
                                    

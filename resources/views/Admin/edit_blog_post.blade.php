@@ -40,8 +40,10 @@
                                         <div class="card-body">
                                             <p class="meta-date">{{$data->created_at}}</p>
 
+                                            <a href="#">
                                             <h5 class="card-title">{{$data->topic}}.</h5>
-                                            <p class="card-text">{{$data->description}}</p>
+                                            </a>
+                                            <!-- <p class="card-text">{{$data->description}}</p> -->
                                         </div>
 
                                     </div>

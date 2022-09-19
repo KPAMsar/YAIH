@@ -15,8 +15,7 @@
 
                     <div class="row layout-top-spacing">
 
-                       
-
+                  
 
 
 
@@ -30,25 +29,28 @@
                                         </div>
                                     </div>
                                 </div>
+                                
                                 <div class="widget-content widget-content-area" >
-                                    <form action="{{route('admin_post_event')}}" method="post" enctype="multipart/form-data">
+                                    
+                                    <form action="{{route('admin_edit_an_event_update',$event->id)}}" method="post" enctype="multipart/form-data">
+                                        @method('PUT')
                                         @csrf
 
                                         <div class="form-group mb-4">
                                             <label for="exampleFormControlInput2">Topic</label>
-                                            <input type="text" class="form-control"  name= "topic"  id="exampleFormControlInput2"
+                                            <input type="text" class="form-control"  name= "topic"  value="{{$event->topic}}" id="exampleFormControlInput2"
                                                 placeholder="Event Name">
                                         </div>
                                         <div class="form-group mb-4">
                                             <label for="exampleFormControlInput2">Description</label>
-                                            <input type="text" class="form-control" name= "description"  id="exampleFormControlInput2"
+                                            <input type="text" class="form-control" name= "description" value="{{$event->description}}" id="exampleFormControlInput2"
                                                 placeholder="Event summary">
                                         </div>
                                         
                                         <div class="form-group mb-4">
                                             <label for="exampleFormControlTextarea1">Post</label>
-                                            <textarea class="form-control" name= "event" placeholder="Event "  id="exampleFormControlTextarea1"
-                                                rows="3"></textarea>
+                                            <textarea class="form-control" name= "event" placeholder="" value="" id="exampleFormControlTextarea1"
+                                                rows="3">{{$event->event}}</textarea>
                                         </div>
                                         <div class="form-group mb-4 mt-3">
                                             <label for="exampleFormControlFile1">Picture</label>
@@ -56,6 +58,7 @@
                                         </div>
                                         <input type="submit" name="time" class="mt-4 mb-4 btn btn-primary">
                                     </form>
+                                   
                                 </div>
                             </div>
                         </div>

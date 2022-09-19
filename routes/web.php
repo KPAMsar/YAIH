@@ -38,6 +38,7 @@ Route::controller(AdminController::class)->group(function(){
     Route::get('/admin/blog-post', 'showBlogPost')->name('admin_show_blog_post');
     Route::get('/admin/create-events', 'creatUpcomingEvents')->name('admin_creat_event');
     Route::get('/admin/edit-events/{id}', 'adminEditEventPage')->name('admin_edit_an_event');
+    Route::put('/admin/edit-events/{id}', 'updateEvent')->name('admin_edit_an_event_update');
 
     Route::post('/admin/create-events', 'createEvent')->name('admin_post_event');
     Route::get('/admin/events', 'showUpcomingEvents')->name('admin_show_event_post');

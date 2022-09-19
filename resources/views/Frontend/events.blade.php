@@ -32,7 +32,7 @@
                        <div class="blog-post wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                            <article class="column-inner">
                                <figure class="image-box">
-                                   <a href="#"><img src="{{asset('public/Images/Blog')}}/{{$data->img}}" alt="" title="Blog" style="width:85rem; height:55rem; object-fit: cover;"></a>
+                                   <a href="#"><img src="{{asset('public/Images/Event')}}/{{$data->img}}" alt="" title="Blog" style="width:85rem; height:55rem; object-fit: cover;"></a>
                                    <div class="post-options">
                                        <a href="#" class="plus-icon img-circle"><span class="flaticon-add30"></span></a>
                                        <a href="#" class="heart-icon img-circle"><span class="flaticon-favorite21"></span></a>
