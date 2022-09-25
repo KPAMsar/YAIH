@@ -33,7 +33,7 @@
                                     @foreach($blog_footer as $data)	
                                     <div class="post">
                                     	<h4>{{$data->description}}</h4>
-                                    	<div class="post-info">March 21, 2015 / <a href="{{route('user_blog_id',$data->id)}}">Read More</a></div>
+                                    	<div class="post-info"> <a href="{{route('user_blog_id',$data->id)}}">Read More</a></div>
                                         
                                     </div>
 

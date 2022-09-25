@@ -32,7 +32,7 @@
                                 <h4>{{$data->topic}}</h4>
                             </a>
                         </li>
-                        @endforeach
+                    @endforeach
                         
                     </ul>
                 </div>
@@ -57,6 +57,50 @@
                             <p>{{$post->post}}</p>
 
                         </div>
+                        <section class="contact-section">
+                                    <div class="auto-container">
+                                        <div class="sec-title">
+                                            <h2> <strong>Comments</strong></h2>
+                                        </div>
+                                        <div class="sec-text">
+                                            @foreach($comment as $data)
+                                            <h2 style="font-size:2rem;font-weight:10px;">
+                                                {{$data->comment}}
+
+                                                </p>
+                                                <p>By: {{$data->user_id}} </p>
+                                                <p> {{ Carbon\Carbon::parse($data->created_at)->format('Y m d')  }} </p>
+
+                                                
+                                                <br><br>
+
+                                                @endforeach
+                                        </div>
+
+                                        <div class="sec-title">
+                                            <h2> Add<strong>Comments</strong></h2>
+                                        </div>
+                                        <div class="form">
+
+                                            <form id="contact-form" method="post" action="{{route('userAddComment',$post->id)}}">
+                                                @csrf
+                                                <div class="row clearfix">
+
+                                                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="form-group-inner">
+                                                            <textarea name="comment" placeholder="Add your comments"></textarea>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group col-md-12 col-sm-12 col-xs-12 text-right">
+                                                        <button class="hvr-bounce-to-right" type="submit" name="submit-form">Add Comment &ensp; <span class="icon flaticon-envelope32"></span></button>
+                                                    </div>
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </section>
 
 
                     </div>
@@ -77,18 +121,7 @@
 
 
 
-<!--Client Logos-->
-<section class="sponsors-section">
-    <div class="container">
-        <ul class="slider">
-            <li><a href="#"><img src="images/clients/logo-6.png" alt="" title=""></a></li>
-            <li><a href="#"><img src="images/clients/logo-7.png" alt="" title=""></a></li>
-            <li><a href="#"><img src="images/clients/logo-8.png" alt="" title=""></a></li>
-            <li><a href="#"><img src="images/clients/logo-9.png" alt="" title=""></a></li>
-            <li><a href="#"><img src="images/clients/logo-10.png" alt="" title=""></a></li>
-        </ul>
-    </div>
-</section>
+
 
 
 @endsection

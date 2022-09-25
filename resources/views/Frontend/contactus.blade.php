@@ -22,7 +22,7 @@
             </div>
         	<div class="form">
         		
-                <form id="contact-form" method="post" action="http://world5.commonsupport.com/html/volunteer/sendemail.php">
+                <form id="contact-form" method="post" action="">
                 	<div class="row clearfix">
                     	<div class="form-group col-md-4 col-sm-6 col-xs-12">
                         	<div class="form-group-inner">

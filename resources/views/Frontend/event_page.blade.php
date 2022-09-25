@@ -79,18 +79,7 @@
 
   
     
-    <!--Client Logos-->
-    <section class="sponsors-section">
-    	<div class="container">
-        	<ul class="slider">
-            	<li><a href="#"><img src="images/clients/logo-6.png" alt="" title=""></a></li>
-                <li><a href="#"><img src="images/clients/logo-7.png" alt="" title=""></a></li>
-                <li><a href="#"><img src="images/clients/logo-8.png" alt="" title=""></a></li>
-                <li><a href="#"><img src="images/clients/logo-9.png" alt="" title=""></a></li>
-                <li><a href="#"><img src="images/clients/logo-10.png" alt="" title=""></a></li>
-            </ul>
-        </div>
-    </section>
+   
     
     
 @endsection

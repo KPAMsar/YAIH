@@ -53,12 +53,12 @@
             <ul class="navbar-item theme-brand flex-row  text-center">
                 <li class="nav-item theme-logo">
                     <a href="index-2.html">
-                        <img src="{{asset('assets/assets/img/logo.svg')}}" class="navbar-logo" alt="logo">
+                        <img src="{{asset('assets/Frontend/img/logo.png')}}" class="navbar-logo" alt="logo" style="width:6rem; height:3rem;">
                     </a>
                 </li>
-                <li class="nav-item theme-text">
+                <!-- <li class="nav-item theme-text">
                     <a href="index-2.html" class="nav-link"> YAIH </a>
-                </li>
+                </li> -->
             </ul>
 
             
@@ -324,8 +324,6 @@
 
     
 </body>
-
-<!-- Mirrored from designreset.com/cork/ltr/demo4/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Aug 2022 16:32:46 GMT -->
 
 </html>
 

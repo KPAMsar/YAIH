@@ -46,7 +46,7 @@
                                    {{ \Illuminate\Support\Str::limit($data->post, 100,'...')}}
                                    </div>
                                    <div 
-                                   class="text-right link"><a href="#" class="read-more"><span class="fa fa-angle-right"></span> &ensp; Read More</a></div>
+                                   class="text-right link"><a href="{{route('user_event_id',$data->id)}}" class="read-more"><span class="fa fa-angle-right"></span> &ensp; Read More</a></div>
                                </div>
                            </article>
                        </div>

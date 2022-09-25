@@ -624,126 +624,39 @@
                                         <thead>
                                             <tr>
                                                 <th>
-                                                    <div class="th-content">Customer</div>
+                                                    <div class="th-content">Name</div>
                                                 </th>
                                                 <th>
-                                                    <div class="th-content">Product</div>
+                                                    <div class="th-content">Email </div>
                                                 </th>
                                                 <th>
-                                                    <div class="th-content">Invoice</div>
+                                                    <div class="th-content">Country</div>
                                                 </th>
                                                 <th>
-                                                    <div class="th-content th-heading">Price</div>
+                                                    <div class="th-content th-heading">Phone No.</div>
                                                 </th>
-                                                <th>
-                                                    <div class="th-content">Status</div>
-                                                </th>
+                                               
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            @foreach($volunteer as $data)
                                             <tr>
                                                 <td>
-                                                    <div class="td-content customer-name"><img src="assets/img/profile-13.jpg" alt="avatar"><span>Luke Ivory</span></div>
+                                                    <div class="td-content customer-name"><span>{{$data->fullname}}</span></div>
                                                 </td>
                                                 <td>
-                                                    <div class="td-content product-brand text-primary">Headphone</div>
+                                                    <div class="td-content product-brand text-primary">{{$data->email}}</div>
                                                 </td>
                                                 <td>
-                                                    <div class="td-content product-invoice">#46894</div>
+                                                    <div class="td-content product-invoice">{{$data->country_of_residence}}</div>
                                                 </td>
                                                 <td>
-                                                    <div class="td-content pricing"><span class="">$56.07</span></div>
+                                                    <div class="td-content pricing"><span class="">{{$data->phone}}</span></div>
                                                 </td>
-                                                <td>
-                                                    <div class="td-content"><span class="badge badge-success">Paid</span></div>
-                                                </td>
+                                               
                                             </tr>
-
-                                            <tr>
-                                                <td>
-                                                    <div class="td-content customer-name"><img src="assets/img/profile-7.jpg" alt="avatar"><span>Andy King</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="td-content product-brand text-warning">Nike Sport</div>
-                                                </td>
-                                                <td>
-                                                    <div class="td-content product-invoice">#76894</div>
-                                                </td>
-                                                <td>
-                                                    <div class="td-content pricing"><span class="">$88.00</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="td-content"><span class="badge badge-primary">Shipped</span></div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="td-content customer-name"><img src="assets/img/profile-10.jpg" alt="avatar"><span>Laurie Fox</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="td-content product-brand text-danger">Sunglasses</div>
-                                                </td>
-                                                <td>
-                                                    <div class="td-content product-invoice">#66894</div>
-                                                </td>
-                                                <td>
-                                                    <div class="td-content pricing"><span class="">$126.04</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="td-content"><span class="badge badge-success">Paid</span></div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="td-content customer-name"><img src="assets/img/profile-5.jpg" alt="avatar"><span>Ryan Collins</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="td-content product-brand text-warning">Sport</div>
-                                                </td>
-                                                <td>
-                                                    <div class="td-content product-invoice">#89891</div>
-                                                </td>
-                                                <td>
-                                                    <div class="td-content pricing"><span class="">$108.09</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="td-content"><span class="badge badge-primary">Shipped</span></div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="td-content customer-name"><img src="assets/img/profile-4.jpg" alt="avatar"><span>Irene Collins</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="td-content product-brand text-primary">Speakers</div>
-                                                </td>
-                                                <td>
-                                                    <div class="td-content product-invoice">#75844</div>
-                                                </td>
-                                                <td>
-                                                    <div class="td-content pricing"><span class="">$84.00</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="td-content"><span class="badge badge-danger">Pending</span></div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="td-content customer-name"><img src="assets/img/profile-11.jpg" alt="avatar"><span>Sonia Shaw</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="td-content product-brand text-danger">Watch</div>
-                                                </td>
-                                                <td>
-                                                    <div class="td-content product-invoice">#76844</div>
-                                                </td>
-                                                <td>
-                                                    <div class="td-content pricing"><span class="">$110.00</span></div>
-                                                </td>
-                                                <td>
-                                                    <div class="td-content"><span class="badge badge-success">Paid</span></div>
-                                                </td>
-                                            </tr>
+                                            @endforeach
+                                        
                                         </tbody>
                                     </table>
                                 </div>
@@ -756,7 +669,7 @@
                         <div class="widget widget-table-three">
 
                             <div class="widget-heading">
-                                <h5 class="">Upcoming Events</h5>
+                                <h5 class="">Volunteer Request</h5>
                             </div>
 
                             <div class="widget-content">

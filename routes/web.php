@@ -76,6 +76,7 @@ Route::controller(FrontendController::class)->group(function(){
     Route::get('blog-post/{id}','showBlogPage')->name('user_blog_id');
     Route::get('event-post/{id}','showEventPages')->name('user_event_id');
     Route::get('iindex','showiindex')->name('usevent_id');
+    Route::post('comment/{id}','addComment')->name('userAddComment');
 
 });
 
