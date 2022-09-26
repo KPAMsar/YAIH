@@ -46,8 +46,8 @@
 /* Rounded Slider Switches */
 .switch .slider.round { border-radius: 34px; }
 .switch .slider.round:before { border-radius: 50%; }
-.switch.s-secondary input:checked + .slider { background-color: #805dca; }
-.switch.s-secondary input:focus + .slider { box-shadow: 0 0 1px #805dca; }
+.switch.s-secondary input:checked + .slider { background-color: #021e57; }
+.switch.s-secondary input:focus + .slider { box-shadow: 0 0 1px #021e57; }
 
 
 /*----------Theme checkbox---------*/

@@ -1038,7 +1038,7 @@ code { color: #e7515a; }
     font-size: 12px;
     color: #515365;
 }
-#sidebar ul.menu-categories ul.submenu > li ul.sub-submenu > li.active a { color: #805dca; }
+#sidebar ul.menu-categories ul.submenu > li ul.sub-submenu > li.active a { color: #021e57; }
 #sidebar ul.menu-categories ul.submenu > li ul.sub-submenu > li a:hover { color: #4361ee; }
 #sidebar ul.menu-categories ul.submenu > li ul.sub-submenu > li a:before { display: none; }
 #sidebar ul.menu-categories ul.submenu > li ul.sub-submenu > li.active a:before { background-color: #4361ee; }

@@ -11,9 +11,9 @@ if($adminGeneralInfo != null ){
 }
 else{
     $fullname =old('fullname');
-    $dob_day = old('dob');
-    $dob_month = old('dob');
-    $dob_year = old('dob');
+    $dob_day = old('dob_day');
+    $dob_month = old('dob_month');
+    $dob_year = old('dob_year');
     $profession =old('profession');
 }
 
@@ -103,14 +103,14 @@ else{
                                                                     <div class="col-sm-6">
                                                                         <div class="form-group">
                                                                             <label for="fullName">Full Name</label>
-                                                                            <input type="text" class="form-control mb-4" name="fullname" id="fullName" placeholder="Full Name" value="{{$adminGeneralInfo->fullname}}">
+                                                                            <input type="text" class="form-control mb-4" name="fullname" id="fullName" placeholder="Full Name" value="{{old('fullname')}}">
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-sm-6">
                                                                         <label class="dob-input">Date of Birth</label>
                                                                         <div class="d-sm-flex d-block">
                                                                             <div class="form-group mr-1">
-                                                                            <select class="form-control" value="{{$adminGeneralInfo->dob_day}}" name="dob_day" id="dob_day">
+                                                                            <select class="form-control" value="{{old('dob_day')}}" name="dob_day" id="dob_day">
                                                                                   <option>Day</option>
                                                                                   <option value="1">1</option>
                                                                                   <option value="2" >2</option>
@@ -145,7 +145,7 @@ else{
                                                                                 </select>
                                                                             </div>
                                                                             <div class="form-group mr-1">
-                                                                                <select class="form-control"  name="dob_month"  id="month" value="{{$adminGeneralInfo->dob_month}}">
+                                                                                <select class="form-control"  name="dob_month"  id="month" value="{{old('dob_month')}}">
                                                                                     <option>Month</option>
                                                                                     <option value="Jan" >Jan</option>
                                                                                     <option value="Feb" >Feb</option>
@@ -162,7 +162,7 @@ else{
                                                                                 </select>
                                                                             </div>
                                                                             <div class="form-group mr-1">
-                                                                                <select class="form-control"  name="dob_year"  value="{{$adminGeneralInfo->dob_year}}" id="year">
+                                                                                <select class="form-control"  name="dob_year"  value="{{old('dob_year')}}" id="year">
                                                                                   <option>Year</option>
                                                                                   <option>2018</option>
                                                                                   <option>2017</option>
@@ -210,7 +210,7 @@ else{
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label for="profession">Profession</label>
-                                                                    <input type="text" class="form-control mb-4" id="profession" name="profession"  placeholder="Profession" value="{{$adminGeneralInfo->profession}}">
+                                                                    <input type="text" class="form-control mb-4" id="profession" name="profession"  placeholder="Profession" value="{{old('profession')}}">
                                                                 </div>
                                                             </div>
                                                         </div>

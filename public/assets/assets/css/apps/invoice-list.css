@@ -88,7 +88,7 @@ table.dataTable {
     white-space: nowrap;
 }
 .table > tbody > tr > td .inv-number {
-    color: #805dca;
+    color: #021e57;
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
@@ -123,7 +123,7 @@ table.dataTable {
     width: 17px;
     height: 17px;
     vertical-align: text-bottom;
-    color: #805dca;
+    color: #021e57;
     fill: #f3effc;
     stroke-width: 1.5;
 }

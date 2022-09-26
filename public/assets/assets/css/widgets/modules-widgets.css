@@ -101,7 +101,7 @@
 .widget-card-four .progress-bar.bg-gradient-secondary {
     position: relative;
     background-color: #fc5296;
-    background-image: linear-gradient(315deg, #805dca  0%, #4361ee 74%); 
+    background-image: linear-gradient(315deg, #021e57  0%, #4361ee 74%); 
 }
 .widget-card-four .progress-bar:before {
     content: '';
@@ -341,8 +341,8 @@
     color: #fff;
 }
 .widget-activity-five .timeline-line .item-timeline .t-dot div.t-secondary {
-    background-color: #805dca;
-    box-shadow: 0 10px 20px -8px #805dca;
+    background-color: #021e57;
+    box-shadow: 0 10px 20px -8px #021e57;
 }
 .widget-activity-five .timeline-line .item-timeline .t-dot div.t-secondary svg {
     color: #fff;
@@ -894,7 +894,7 @@
     width: 42px;
     height: 42px;
     border-radius: 12px;
-    background-color: #805dca;
+    background-color: #021e57;
     color: #f3effc;
 }
 .widget-five .widget-heading .usr-avatar span {
@@ -1287,7 +1287,7 @@
     background: rgb(255 236 203 / 51%);
 }
 .widget-three .widget-content .summary-list:nth-child(1) .w-icon svg {
-    color: #805dca;
+    color: #021e57;
 }
 .widget-three .widget-content .summary-list:nth-child(2) .w-icon svg {
     color: #009688;
@@ -1475,7 +1475,7 @@
     background-color: rgb(220, 207, 247);
 }
 .widget-table-one .transactions-list.t-secondary .t-item .t-icon .icon svg {
-    color: #805dca;
+    color: #021e57;
 }
 .widget-table-one .transactions-list .t-item .t-icon .icon {
     position: relative;
@@ -1636,7 +1636,7 @@
     /* border: 2px solid rgb(159, 163, 187); */
 }
 .widget-activity-four .timeline-line .item-timeline.timeline-secondary .t-dot:before {
-    background: #805dca;
+    background: #021e57;
     /* border: 2px solid rgb(92 26 195 / 35%);     */
 }
 .widget-activity-four .timeline-line .item-timeline.timeline-warning .t-dot:before {
@@ -1691,8 +1691,8 @@
     background-color: #eaf1ff;
 }
 .widget-activity-four .timeline-line .item-timeline.timeline-secondary .t-text span.badge {
-    color: #805dca;
-    border: 1px solid #805dca;
+    color: #021e57;
+    border: 1px solid #021e57;
     background-color: #f3effc;
 }
 .widget-activity-four .timeline-line .item-timeline.timeline-danger .t-text span.badge {
@@ -2019,7 +2019,7 @@
     letter-spacing: 1px;
 }
 .widget-account-invoice-three .invoice-list .inv-action a.view-details {
-    color: #805dca!important;
+    color: #021e57!important;
     background: rgb(92 26 195 / 17%);
     border: none!important;
 }
@@ -2455,7 +2455,7 @@
     background-color: rgb(220 207 247 / 55%);
 }
 .widget-activity-three .timeline-line .item-timeline .t-dot div.t-secondary svg {
-    color: #805dca;
+    color: #021e57;
 }
 .widget-activity-three .timeline-line .item-timeline .t-dot div.t-success {
     background-color: rgb(199 230 228 / 62%);
@@ -2605,7 +2605,7 @@
     stroke-width: 1px;
 }
 .widget-four .widget-content .summary-list:nth-child(1) .w-icon svg {
-    color: #805dca;
+    color: #021e57;
     fill: rgb(92 26 195 / 16%);
 }
 .widget-four .widget-content .summary-list:nth-child(2) .w-icon svg {
@@ -2645,7 +2645,7 @@
     color: #888ea8;
 }
 .widget-four .widget-content .summary-list.summary-income .w-summary-info .summary-average {
-    color: #805dca;
+    color: #021e57;
 }
 .widget-four .widget-content .summary-list.summary-profit .w-summary-info .summary-average {
     color: #2196f3;
